@@ -13,7 +13,7 @@ body
 body {
     padding-top: 50px !important;
 }
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,21 +23,13 @@ header {
     z-index: 1000; /* Đảm bảo nằm trên các phần tử khác */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tùy chọn: tạo bóng cho đẹp */
 }
+
 .header-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 60px;
-    width: 100%;
+    padding: 10px ;
     background: linear-gradient(90deg, #5aa4f4, #0056b3); /* Gradient màu xanh */
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng đổ */
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
 }
 .logo {
     height: 40px; /* Tăng kích thước logo */
@@ -51,7 +43,6 @@ header {
 }
 .navbar {
     padding: 10px 15px;
-    /* border-left: solid 2px rgb(215, 164, 106); */
     color: black;
     font-size: 1.6rem;
     font-family: Arial, sans-serif;
@@ -62,7 +53,6 @@ header {
     font-weight: bold; /* In đậm chữ */
     text-decoration: underline; /* Gạch chân chữ */
     background-color: rgb(138, 243, 219); /* Thêm màu nền khi hover */
-    /* color: white; Đổi màu chữ khi hover */
     transition: transform 0.1s ease, background-color 0.1s ease, color 0.1s ease;
 }
 
@@ -99,7 +89,7 @@ header {
     /* menu */
     .menu_drawer {
         position: fixed;
-        background-color: #f3f4f6;
+        background: linear-gradient(90deg, #5aa4f4, #0056b3); /* Gradient màu xanh */
         inset: 0 0 0 50%;
         transform: translateX(100%);
         z-index: 2;

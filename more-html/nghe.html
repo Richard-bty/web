@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../nghe/css/nghe.css">
+    <script src="../nghe/2.js"></script>
+    <script src="../question/1.js"></script>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các nhóm ngành nghề</title>
+    <style>
+       
+
+        /* Reset CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("./hinh-play/nen.png") no-repeat center center/cover;
+    background-attachment: fixed;
+    font-size: 62.5%;
+}
+
+/* Container */
+.search-container {
+    margin: 20px;
+}
+
+/* Header */
+.search-header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Search Box */
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    width: 250px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+/* Career Grid */
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+/* Career Card */
+.career-card {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease-in-out;
+}
+
+.career-card:hover {
+    transform: scale(1.05);
+}
+
+.career-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.career-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.career-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.dropdown {
+    width: 300px; 
+    margin-bottom: 20px;
+  }
+
+  .dropdown select {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 18px; 
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+  }
+    </style>
+    <!-- Nhúng Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+        };
+    </script>
+
+    <!-- FontAwesome và Font Google -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Copy menu từ desktop sang mobile
+            const navPC = document.querySelector("#navbar_list-PC");
+            const navMobile = document.querySelector("#navbar_list-mobile");
+            if (navPC && navMobile) {
+                navMobile.innerHTML = navPC.innerHTML;
+            }
+
+            // Chức năng tìm kiếm nghề nghiệp
+            const searchInput = document.getElementById('searchInput');
+            const careerCards = document.querySelectorAll('.career-card');
+
+            searchInput.addEventListener('input', function() {
+                const query = searchInput.value.toLowerCase();
+                careerCards.forEach(card => {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    card.style.display = title.includes(query) ? 'block' : 'none';
+                });
+            });
+        });
+    </script> -->
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- HEADER -->
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container mx-auto p-4">
+            <section class="mb-8">
+                <div class="search-header">
+                    <h2 class="title">Tìm kiếm ngành nghề</h2>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="tìm kiếm ngành nghề...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+                <form class="dropdown">
+                    <label for="nghe"></label>
+                    <select id="nghe" name="nghe">
+                        <option value="before">Tất cả các ngành</option>
+                        <option value="after">Ngành phù hợp với bạn</option>
+                    </select>
+                </form>
+                <div class="career-grid">
+                    <!-- Career Cards -->
+                    <a class="career-card" href="../nghe/anninh.html">
+                        <img src="../img/quandoi.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> An ninh công an quân sự </h3>
+                        <h1 class="career-type"> Conventional </h1>
+                        <h1 class="career-type"> Enterprising </h1>
+                        <p> Bảo vệ an ninh, quốc phòng, trật tự xã hội; yêu cầu tính kỷ luật cao. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/chinhtri.html">
+                        <img src="../img/QH công chúng.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Chính trị </h3>
+                        <h1 class="career-type"> Enterprising </h1>
+                        <p> Quản lý, điều hành các hoạt động chính trị, xây dựng và phát triển các chính sách quốc gia. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/congnghe.html">
+                        <img src="../img/công nghệ thong tin.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Công nghệ </h3>
+                        <h1 class="career-type"> Investigative </h1>
+                        <h1 class="career-type"> Realistic </h1>
+                        <p> Phát triển và ứng dụng các công nghệ mới trong các lĩnh vực khác nhau như phần mềm, mạng và viễn thông. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/dulich.html">
+                        <img src="../img/dulich.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Du lịch </h3>
+                        <h1 class="career-type"> Social </h1>
+                        <h1 class="career-type"> Enterprising </h1>
+                        <p> Quản lý, tổ chức các hoạt động du lịch, tạo ra trải nghiệm cho khách du lịch. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/khtn.html">
+                        <img src="../img/tunhien.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Khoa học tự nhiên </h3>
+                        <h1 class="career-type"> Investigative </h1>
+                        <p> Nghiên cứu các hiện tượng tự nhiên, phát triển công nghệ và giải quyết vấn đề khoa học. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/khxh.html">
+                        <img src="../img/xahoi.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Khoa học xã hội </h3>
+                        <h1 class="career-type"> Investigative </h1>
+                        <h1 class="career-type"> Social </h1>
+                        <p> Nghiên cứu các yếu tố xã hội, hành vi con người và mối quan hệ trong cộng đồng. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/kientruc.html">
+                        <img src="../img/kiến trúc.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Kiến trúc xây dựng </h3>
+                        <h1 class="career-type"> Artistic </h1>
+                        <h1 class="career-type"> Realistic </h1>
+                        <p> Thiết kế các công trình xây dựng, đảm bảo tính thẩm mỹ và công năng. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/kinhte.html">
+                        <img src="../img/sukien.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Kinh tế kinh doanh quản trị </h3>
+                        <h1 class="career-type"> Enterprising </h1>
+                        <h1 class="career-type"> Conventional </h1>
+                        <p> Quản lý, điều hành và phát triển doanh nghiệp; yêu cầu kỹ năng lãnh đạo và tư duy chiến lược. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/kientruc.html">
+                        <img src="../img/xaydung.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Kỹ thuật kỹ sư </h3>
+                        <h1 class="career-type"> Realistic </h1>
+                        <h1 class="career-type"> Investigative </h1>
+                        <p> Phát triển, thiết kế và cải tiến các công nghệ và hệ thống kỹ thuật. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/luat.html">
+                        <img src="../img/luật.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Luật </h3>
+                        <h1 class="career-type"> Investigative </h1>
+                        <h1 class="career-type"> Conventional </h1>
+                        <p> Nghiên cứu và thực thi pháp luật, bảo vệ quyền lợi của các cá nhân và tổ chức. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/moitruong.html">
+                        <img src="../img/moitruong.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Môi trường </h3>
+                        <h1 class="career-type"> Investigative </h1>
+                        <h1 class="career-type"> Realistic </h1>
+                        <p> Nghiên cứu và bảo vệ môi trường, phát triển bền vững. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/nghethuat.html">
+                        <img src="../img/đồ họa.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Nghệ thuật thiết kế </h3>
+                        <h1 class="career-type"> Artistic </h1>
+                        <p> Sáng tạo các sản phẩm nghệ thuật, thiết kế đồ họa, thời trang, hoặc truyền thông thị giác. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/ngoaigiao.html">
+                        <img src="../img/ngoaigiao.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Ngoại giao quốc tế </h3>
+                        <h1 class="career-type"> Enterprising </h1>
+                        <h1 class="career-type"> Social </h1>
+                        <p> Tạo dựng quan hệ quốc tế, quản lý và giải quyết các vấn đề toàn cầu. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/ngonngu.html">
+                        <img src="../img/ngoại ngữ.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Ngôn ngữ </h3>
+                        <h1 class="career-type"> Social </h1>
+                        <h1 class="career-type"> Artistic </h1>
+                        <p> Dịch thuật, giảng dạy và nghiên cứu các ngôn ngữ và văn hóa. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/nonglam.html">
+                        <img src="../img/nonglam.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Nông lâm </h3>
+                        <h1 class="career-type"> Realistic </h1>
+                        <p> Quản lý và phát triển các lĩnh vực nông nghiệp, lâm nghiệp, chăn nuôi và thủy sản. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/ptichdlieu.html">
+                        <img src="../img/khoa học dữ liệu.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Phân tích dữ liệu </h3>
+                        <h1 class="career-type"> Investigative </h1>
+                        <p> Phân tích và xử lý dữ liệu để đưa ra quyết định và dự báo. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/supham.html">
+                        <img src="../img/supham.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Sư phạm </h3>
+                        <h1 class="career-type"> Social </h1>
+                        <p> Giảng dạy, đào tạo, phát triển học sinh, sinh viên. </p>
+                    </a>
+    
+                    <a class="career-card" href="../nghe/thucpham.html">
+                        <img src="../img/thực phẩm.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Thực phẩm dinh dưỡng </h3>
+                        <h1 class="career-type"> Investigative </h1>
+                        <p> Nghiên cứu và phát triển thực phẩm, đảm bảo chất lượng dinh dưỡng. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/triethoc.html">
+                        <img src="../img/triethoc.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Triết học </h3>
+                        <h1 class="career-type"> Investigative </h1>
+                        <p> Nghiên cứu các vấn đề cơ bản của nhân sinh, đạo đức và tri thức. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/tritue.html">
+                        <img src="../img/AI.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Trí tuệ nhân tạo </h3>
+                        <h1 class="career-type"> Investigative </h1>
+                        <p> Phát triển và ứng dụng công nghệ trí tuệ nhân tạo trong nhiều lĩnh vực. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/truyenthong.html">
+                        <img src="../img/marketing.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Truyền thông marketing </h3>
+                        <h1 class="career-type"> Enterprising </h1>
+                        <h1 class="career-type"> Social </h1>
+                        <p> Xây dựng và triển khai chiến lược marketing, quảng cáo và truyền thông cho sản phẩm. </p>
+                    </a>
+                    
+                    <a class="career-card" href="../nghe/y.html">
+                        <img src="../img/y dược.jpg" alt="##" class="career-img" />
+                        <h3 class="career-title"> Y dược </h3>
+                        <h1 class="career-type"> Investigative </h1>
+                        <p> Nghiên cứu và ứng dụng khoa học y học để phòng ngừa, chữa bệnh và nâng cao sức khỏe. </p>
+                    </a>
+                    
+                </div>
+            </section>
+    </main>
+
+</body>
+</html>

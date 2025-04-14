@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Document</title>
+    <style>
+        /* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+  
+}
+body{
+    font-size: 62.5%;
+    background: url("nen.png") no-repeat center center/cover;
+    background-attachment: fixed;
+    background-size: 100wh;
+}
+/* Grid styles */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Box styles */
+.box {
+    background-color: #ffffff;
+    margin: auto 40px;
+    margin-top: 50px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Button styles */
+.button {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.button i {
+    margin-left: 8px;
+}
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <main class="container">
+        <div class="grid">
+            <div class="box">
+                <img alt="Screenshot of the game 2048" height="200" 
+                    src="./hinh-play/Picture1.png" width="300"/>
+                <button class="button">
+                    <a href="../game/2048-master/index.html">
+                    Play
+                    <i class="fas fa-play"></i></a>
+                </button>
+            </div>
+    
+            <div class="box">
+                <img alt="Screenshot of the game Flappy Bird" height="200" 
+                    src="./hinh-play/Picture2.png" width="300"/>
+                <button class="button">
+                    <a href="../game/floppybird-gh-pages/index.html">
+                    Play
+                    <i class="fas fa-play"></i></a>
+                </button>
+            </div>
+    
+            <div class="box">
+                <img alt="Screenshot of the game Hexagon" height="200" 
+                    src="./hinh-play/Picture3.png" width="300"/>
+                <button class="button">
+                    <a href="../game/hextris-gh-pages/index.html">
+                    Play
+                    <i  class="fas fa-play"></i></a>
+                </button>
+            </div>
+    
+            <div class="box">
+                <img alt="Screenshot of the game Tetris" height="200" 
+                    src="./hinh-play/Picture4.png" width="300"/>
+                <button class="button">
+                    <a href="../game/javascript-tetris-master/index.html">
+                    Play
+                    <i class="fas fa-play"></i></a>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

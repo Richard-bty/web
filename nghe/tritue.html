@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành Trí Tuệ Nhân Tạo
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../../nghe/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="./more-html/gioithieu.html">Giới thiệu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Ngành Trí Tuệ Nhân Tạo</h1>
+        <section class="sections">
+            <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+            <div class="containers">
+                <div class="texts">
+                    <h1>Ngành này là gì? Học gì?</h1>
+                    <p>Ngành Trí Tuệ Nhân Tạo (AI) là ngành học nghiên cứu và phát triển các hệ thống máy tính có khả năng thực hiện các tác vụ mà trước đây chỉ có con người mới có thể làm được, như học hỏi, ra quyết định, nhận dạng hình ảnh, và xử lý ngôn ngữ tự nhiên. Ngành này kết hợp giữa toán học, khoa học máy tính và lý thuyết về học máy, giúp máy tính "học" từ dữ liệu và tự cải thiện khả năng của mình mà không cần phải lập trình theo cách truyền thống.</p>
+    
+                    <h1>Ngành này học về:</h1>
+                    <ul>
+                        <li>Học máy (Machine Learning).</li>
+                        <li>Xử lý ngôn ngữ tự nhiên (Natural Language Processing).</li>
+                        <li>Nhận dạng hình ảnh và thị giác máy tính (Computer Vision).</li>
+                        <li>Mạng nơ-ron nhân tạo và các phương pháp tối ưu hóa.</li>
+                        <li>Hệ thống khuyến nghị và trí tuệ doanh nghiệp.</li>
+                    </ul>
+    
+                    <h1>Mức lương trung bình</h1>
+                    <ul>
+                        <li>Kỹ sư AI: Lương từ 20-40 triệu đồng/tháng.</li>
+                        <li>Chuyên gia học máy: Lương từ 25-50 triệu đồng/tháng.</li>
+                        <li>Nhà nghiên cứu AI: Lương từ 30-60 triệu đồng/tháng.</li>
+                        <li>Chuyên gia phát triển hệ thống AI: Lương từ 35 triệu đồng/tháng trở lên.</li>
+                    </ul>
+                    <p>Ngành Trí Tuệ Nhân Tạo mang lại nhiều cơ hội nghề nghiệp trong các lĩnh vực công nghệ cao, y tế, tài chính, giao thông thông minh và nhiều ngành khác. Các chuyên gia AI đang trở thành lực lượng lao động không thể thiếu trong thời đại số hóa và tự động hóa hiện nay.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="sections">
+            <h2 class="de">Điểm Chuẩn & Điều Kiện Xét Tuyển</h2>
+            <div class="containers">
+                <div class="texts">
+                    <div class="section">
+                        <h2>1. Phương thức 1: Xét tuyển thẳng và ưu tiên xét tuyển</h2>
+                        <ul>
+                            <li>Áp dụng cho thí sinh đạt giải trong các kỳ thi học sinh giỏi quốc gia, quốc tế.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>2. Phương thức 2: Xét tuyển dựa trên kết quả học tập THPT (học bạ)</h2>
+                        <ul>
+                            <li><strong>Điều kiện:</strong></li>
+                            <ul>
+                                <li>Tốt nghiệp THPT.</li>
+                                <li>Học lực lớp 12 đạt loại Giỏi hoặc điểm trung bình chung học tập lớp 12 đạt từ 8.0 trở lên.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>3. Phương thức 3: Xét tuyển dựa trên kết quả thi đánh giá năng lực</h2>
+                        <ul>
+                            <li>Sử dụng kết quả kỳ thi đánh giá năng lực do các trường đại học tổ chức (ví dụ: ĐH Quốc gia Hà Nội, ĐH Quốc gia TP.HCM).</li>
+                            <li><strong>Điểm xét tuyển:</strong> Điểm bài thi đánh giá năng lực + Điểm ưu tiên (nếu có).</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>4. Phương thức 4: Xét tuyển dựa trên kết quả thi tốt nghiệp THPT</h2>
+                        <ul>
+                            <li>Sử dụng kết quả thi tốt nghiệp THPT năm 2025.</li>
+                            <li><strong>Điểm xét tuyển:</strong> Tổng điểm 3 môn thi theo tổ hợp + Điểm ưu tiên (nếu có).</li>
+                            <li><strong>Các tổ hợp xét tuyển:</strong>
+                                <ul>
+                                    <li>A00: Toán, Vật lý, Hóa học</li>
+                                    <li>A01: Toán, Vật lý, Tiếng Anh</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>Lưu ý:</h2>
+                        <ul>
+                            <li>Thí sinh có thể đăng ký xét tuyển theo nhiều phương thức khác nhau.</li>
+                            <li>Thí sinh cần theo dõi website chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất về tuyển sinh.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu</h2>
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hustHN.jpg" alt="Đại học Bách Khoa Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa Hà Nội</strong>
+                        <p>Trường đào tạo CNTT và AI hàng đầu với chương trình chuẩn quốc tế.</p>
+                        <a href="https://www.hust.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/congngheHN.jpg" alt="Đại học Công nghệ - ĐHQG Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Công nghệ - ĐHQG Hà Nội</strong>
+                        <p>Đào tạo chuyên sâu về Khoa học Máy tính, AI, và An toàn thông tin.</p>
+                        <a href="https://uet.vnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/ptit.jpg" alt="Học viện Công nghệ Bưu chính Viễn thông">
+                    <div class="info">
+                        <strong>Học viện Công nghệ Bưu chính Viễn thông</strong>
+                        <p>Chuyên về Viễn thông và AI, hợp tác với nhiều doanh nghiệp lớn.</p>
+                        <a href="https://ptit.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/mta.jpg" alt="Học viện Kỹ thuật Quân sự">
+                    <div class="info">
+                        <strong>Học viện Kỹ thuật Quân sự</strong>
+                        <p>Đào tạo kỹ sư AI theo hướng nghiên cứu và ứng dụng quân sự.</p>
+                        <a href="https://mta.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/haiu.jpg" alt="Đại học Công nghiệp Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Công nghiệp Hà Nội</strong>
+                        <p>Chương trình đào tạo AI thực tiễn và hợp tác doanh nghiệp.</p>
+                        <a href="https://www.haui.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dut.jpg" alt="Đại học Bách Khoa - ĐH Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa - ĐH Đà Nẵng</strong>
+                        <p>Trường đào tạo AI và CNTT hàng đầu khu vực miền Trung.</p>
+                        <a href="https://dut.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/huein.jpg" alt="Đại học Khoa học - ĐH Huế">
+                    <div class="info">
+                        <strong>Đại học Khoa học - ĐH Huế</strong>
+                        <p>Đào tạo AI và CNTT với định hướng nghiên cứu và ứng dụng thực tế.</p>
+                        <a href="https://husc.hueuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/udn.jpg" alt="Đại học Sư phạm Kỹ thuật Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật Đà Nẵng</strong>
+                        <p>Chương trình AI và CNTT chú trọng thực hành và ứng dụng thực tế.</p>
+                        <a href="https://ute.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/qnu.jpg" alt="Đại học Quy Nhơn">
+                    <div class="info">
+                        <strong>Đại học Quy Nhơn</strong>
+                        <p>Chuyên ngành AI và CNTT với định hướng phát triển ứng dụng.</p>
+                        <a href="https://www.qnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/vinhuni.jpg" alt="Đại học Vinh">
+                    <div class="info">
+                        <strong>Đại học Vinh</strong>
+                        <p>Đào tạo AI và CNTT với chương trình hiện đại và thực tiễn.</p>
+                        <a href="https://vinhuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hustHCM.jpg" alt="Đại học Bách Khoa TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa TP.HCM</strong>
+                        <p>Chương trình CNTT và AI chuẩn quốc tế, liên kết với nhiều tập đoàn công nghệ.</p>
+                        <a href="https://www.hcmut.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/vnuhcm.webp" alt="Đại học Công nghệ Thông tin - ĐHQG TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Công nghệ Thông tin - ĐHQG TP.HCM</strong>
+                        <p>Chuyên sâu về AI, Khoa học Dữ liệu và các lĩnh vực công nghệ tiên tiến.</p>
+                        <a href="https://www.uit.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/ussh.jpg" alt="Đại học Khoa học Tự nhiên - ĐHQG TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Khoa học Tự nhiên - ĐHQG TP.HCM</strong>
+                        <p>Đào tạo AI và Khoa học Máy tính với chương trình nghiên cứu chuyên sâu.</p>
+                        <a href="https://www.hcmus.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/sgu.jpg" alt="Đại học Sài Gòn">
+                    <div class="info">
+                        <strong>Đại học Sài Gòn</strong>
+                        <p>Đào tạo ngành AI với định hướng ứng dụng thực tiễn và hợp tác doanh nghiệp.</p>
+                        <a href="https://sgu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/tdt.jpg" alt="Đại học Tôn Đức Thắng">
+                    <div class="info">
+                        <strong>Đại học Tôn Đức Thắng</strong>
+                        <p>Chương trình đào tạo AI hiện đại, kết hợp nghiên cứu và thực hành.</p>
+                        <a href="https://tdtu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

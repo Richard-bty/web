@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành Công Nghệ Thông Tin
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Ngành Chính trị</h1>
+<section class="sections">
+    <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+    <div class="containers">
+        <!-- <img class="images" src="./hinh/cntt1.webp" alt="Ngành Chính trị"> -->
+        <div class="texts">
+            <h1>Ngành này là gì? Học gì?</h1>
+            <p>Ngành Chính trị là một lĩnh vực nghiên cứu và hoạt động liên quan đến việc phân tích, xây dựng và thực thi các chính sách và chiến lược liên quan đến quyền lực, chính quyền, và các quan hệ xã hội trong một quốc gia. Ngành này tập trung vào việc phát triển, duy trì, và cải thiện các cơ chế chính trị, giúp các hệ thống chính trị hoạt động ổn định và hiệu quả.</p>
+            <p>Ngành này học về:</p>
+            <ul>
+                <li>Lý thuyết chính trị và các hệ thống chính trị</li>
+                <li>Phân tích chính sách và quản lý công</li>
+                <li>Quan hệ quốc tế và đối ngoại</li>
+                <li>Pháp luật và quyền con người</li>
+                <li>Quản lý nhà nước và tổ chức chính trị</li>
+            </ul>
+
+            <h1>Mức lương trung bình</h1>
+            <ul>
+                <li>Mới vào nghề (Cán bộ, chuyên viên): Lương cơ bản thường dao động từ khoảng 5-7 triệu đồng/tháng.</li>
+                <li>Cán bộ có thâm niên (Chuyên viên chính, Trưởng phòng): Lương có thể lên tới 8-12 triệu đồng/tháng, tùy vào thâm niên và vị trí công tác.</li>
+                <li>Cấp lãnh đạo, quản lý (Giám đốc, Trưởng ban): Mức lương có thể dao động từ 15-25 triệu đồng/tháng, tùy vào cấp bậc và trách nhiệm.</li>
+            </ul>
+            <p>Các cơ quan lớn như Chính phủ, Quốc hội, các tổ chức quốc tế có thể có mức lương cao hơn so với các cơ quan địa phương.</p>
+            <p>Ngoài lương cơ bản, các cán bộ chính trị còn có thể nhận được các khoản phụ cấp và các chế độ đãi ngộ khác.</p>
+        </div>
+    </div>
+</section>
+        <section class="sections">
+            <h2 class="de">
+                Điểm Chuẩn & Điều Kiện Xét Tuyển
+            </h2>
+            <div class="containers">
+                <!-- <img class="images" src="./hinh/cntt2.webp" alt="Ngành CNTT"> -->
+                <div class="texts">
+                <div class="section">
+                    <h2>1. Xét tuyển thẳng và ưu tiên xét tuyển</h2>
+                    <p>Áp dụng cho thí sinh đạt giải trong các kỳ thi học sinh giỏi quốc gia, quốc tế.</p>
+                    <p>Điều kiện:</p>
+                    <ul>
+                        <li>Đạt giải Nhất, Nhì, Ba trong kỳ thi học sinh giỏi quốc gia.</li>
+                        <li>Đạt giải trong các kỳ thi Olympic quốc tế.</li>
+                        <li>Đạt danh hiệu học sinh giỏi 3 năm THPT.</li>
+                        <li>Ưu tiên xét tuyển cho thí sinh có chứng chỉ ngoại ngữ quốc tế.</li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>2. Xét tuyển dựa trên kết quả thi đánh giá năng lực</h2>
+                    <p>Sử dụng kết quả kỳ thi đánh giá năng lực của Đại học Quốc gia Hà Nội hoặc TP.HCM.</p>
+                    <p>Điểm xét tuyển = Điểm bài thi đánh giá năng lực + Điểm ưu tiên (nếu có).</p>
+                    <p>Ngưỡng đảm bảo chất lượng đầu vào do trường công bố sau khi có kết quả thi.</p>
+                </div>
+            
+                <div class="section">
+                    <h2>3. Xét tuyển dựa trên kết quả học tập THPT (học bạ)</h2>
+                    <p>Điểm xét tuyển = Tổng điểm trung bình 3 môn theo tổ hợp xét tuyển của 5 học kỳ (lớp 10, 11 và học kỳ 1 lớp 12) + Điểm ưu tiên.</p>
+                    <p>Điều kiện:</p>
+                    <ul>
+                        <li>Tốt nghiệp THPT.</li>
+                        <li>Học lực lớp 12 đạt loại Giỏi hoặc điểm xét tốt nghiệp đạt từ 8.0 trở lên.</li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>4. Xét tuyển dựa trên kết quả thi tốt nghiệp THPT</h2>
+                    <p>Sử dụng kết quả 3 môn thi tốt nghiệp THPT theo tổ hợp xét tuyển.</p>
+                    <p>Điểm xét tuyển = Tổng điểm 3 môn thi + Điểm ưu tiên.</p>
+                    <p>Tổ hợp xét tuyển:</p>
+                    <ul>
+                        <li>A00: Toán, Vật lý, Hóa học.</li>
+                        <li>C00: Ngữ văn, Lịch sử, Địa lý.</li>
+                        <li>D01: Toán, Ngữ văn, Tiếng Anh.</li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>Lưu ý:</h2>
+                    <ul>
+                        <li>Thí sinh có thể đăng ký xét tuyển theo nhiều phương thức khác nhau.</li>
+                        <li>Điểm xét tuyển của các phương thức sẽ được quy đổi về thang điểm 30 để so sánh.</li>
+                        <li>Trường sẽ ưu tiên xét tuyển các phương thức sớm trước khi xét điểm thi tốt nghiệp THPT.</li>
+                        <li>Chứng chỉ ngoại ngữ quốc tế phải có ngày thi trước 30/5/2025.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu</h2>
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+            <div class="university-card">
+                <img src="./hinh/ajc.jpg" alt="Học viện Báo chí và Tuyên truyền">
+                <div class="info">
+                <strong>Học viện Báo chí và Tuyên truyền (AJC)</strong>
+                <p>Địa chỉ: 36 Xuân Thủy, Cầu Giấy, Hà Nội</p>
+                <a href="https://ajc.hcma.vn" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/napa.jpg" alt="Học viện Hành chính Quốc gia">
+                <div class="info">
+                <strong>Học viện Hành chính Quốc gia (NAPA)</strong>
+                <p>Địa chỉ: 77 Nguyễn Chí Thanh, Đống Đa, Hà Nội</p>
+                <a href="https://www1.napa.vn" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/vya.jpg" alt="Học viện Thanh thiếu niên Việt Nam">
+                <div class="info">
+                <strong>Học viện Thanh thiếu niên Việt Nam (VYA)</strong>
+                <p>Địa chỉ: 58 Nguyễn Chí Thanh, Đống Đa, Hà Nội</p>
+                <a href="https://vya.edu.vn" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/poc.jpg" alt="Trường Đại học Chính trị">
+                <div class="info">
+                <strong>Trường Đại học Chính trị (Trường Sĩ quan Chính trị) (POC)</strong>
+                <p>Địa chỉ: Phường Vân Canh, Thành phố Hà Nội</p>
+                <a href="http://daihocchinhtri.edu.vn" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/ussh.jpg" alt="Trường Đại học Khoa học Xã hội và Nhân văn – ĐHQG Hà Nội">
+                <div class="info">
+                <strong>Trường Đại học Khoa học Xã hội và Nhân văn – ĐHQG Hà Nội (USSH)</strong>
+                <p>Địa chỉ: 336 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                <a href="https://ussh.vnu.edu.vn" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/hnue.jpg" alt="Trường Đại học Sư phạm Hà Nội">
+                <div class="info">
+                <strong>Trường Đại học Sư phạm Hà Nội (HNUE)</strong>
+                <p>Địa chỉ: 136 Xuân Thủy, Cầu Giấy, Hà Nội</p>
+                <a href="https://hnue.edu.vn" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            </div>
+
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+            <div class="university-card">
+                <img src="./hinh/hdu.jpg" alt="Trường Đại học Hồng Đức">
+                <div class="info">
+                <strong>Trường Đại học Hồng Đức (HDU)</strong>
+                <p>Địa chỉ: 565 Quang Trung, Đông Vệ, Thành phố Thanh Hóa, Thanh Hóa</p>
+                <a href="https://hdu.edu.vn" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            </div>
+
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+            <div class="university-card">
+                <img src="./hinh/ctu.jpg" alt="Trường Đại học Cần Thơ">
+                <div class="info">
+                <strong>Trường Đại học Cần Thơ (CTU)</strong>
+                <p>Địa chỉ: Khu II, đường 3/2, Ninh Kiều, Cần Thơ</p>
+                <a href="https://www.ctu.edu.vn" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/vnuhcm-ussh.jpg" alt="Trường Đại học Khoa học Xã hội và Nhân văn – ĐHQG TP.HCM">
+                <div class="info">
+                <strong>Trường Đại học Khoa học Xã hội và Nhân văn – ĐHQG TP.HCM (VNUHCM-USSH)</strong>
+                <p>Địa chỉ: 10-12 Đinh Tiên Hoàng, Bến Nghé, Quận 1, TP.HCM</p>
+                <a href="https://hcmussh.edu.vn" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            </div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

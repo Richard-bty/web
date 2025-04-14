@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành Kỹ thuật và Kỹ sư
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Ngành Kỹ thuật và Kỹ sư</h1>
+<section class="sections">
+    <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+    <div class="containers">
+        <!-- <img class="images" src="./hinh/kythuat1.webp" alt="Ngành Kỹ thuật"> -->
+        <div class="texts">
+            <h1>Ngành này là gì? Học gì?</h1>
+            <p>Ngành Kỹ thuật tập trung vào việc ứng dụng các nguyên lý khoa học và toán học để thiết kế, phát triển và cải tiến các hệ thống, máy móc, công trình và quy trình. Sinh viên theo học ngành này sẽ được trang bị kiến thức về:</p>
+            <ul>
+                <li><strong>Kỹ thuật cơ khí:</strong> Thiết kế và chế tạo máy móc, thiết bị cơ khí.</li>
+                <li><strong>Kỹ thuật điện và điện tử:</strong> Phát triển hệ thống điện, mạch điện tử và thiết bị điện.</li>
+                <li><strong>Kỹ thuật xây dựng:</strong> Thiết kế và quản lý các công trình xây dựng như cầu, đường, tòa nhà.</li>
+                <li><strong>Kỹ thuật hóa học:</strong> Nghiên cứu và phát triển quy trình hóa học trong sản xuất công nghiệp.</li>
+                <li><strong>Kỹ thuật máy tính:</strong> Phát triển phần cứng và phần mềm máy tính.</li>
+                <li><strong>Kỹ thuật hệ thống:</strong> Phân tích và thiết kế các hệ thống kỹ thuật phức tạp.</li>
+                <li><strong>Kỹ thuật hàng hải:</strong> Thiết kế và vận hành các phương tiện và công trình trên biển.</li>
+                <li><strong>Kỹ thuật hàng không vũ trụ:</strong> Nghiên cứu và phát triển máy bay, vệ tinh và công nghệ vũ trụ.</li>
+            </ul>
+
+            <h1>Mức lương trung bình</h1>
+            <ul>
+                <li><strong>Kỹ sư mới ra trường:</strong> Mức lương khởi điểm thường dao động từ 6-8 triệu đồng/tháng, tùy thuộc vào chuyên ngành và khu vực làm việc.</li>
+                <li><strong>Kỹ sư có kinh nghiệm (3-5 năm):</strong> Mức lương có thể từ 10-15 triệu đồng/tháng.</li>
+                <li><strong>Kỹ sư quản lý hoặc chuyên gia (trên 5 năm):</strong> Mức lương có thể đạt từ 15-25 triệu đồng/tháng hoặc cao hơn, tùy vào vị trí và trách nhiệm.</li>
+            </ul>
+            <p>Lưu ý: Mức lương có thể thay đổi dựa trên quy mô công ty, vị trí địa lý và ngành nghề cụ thể.</p>
+        </div>
+    </div>
+</section>
+<section class="sections">
+    <h2 class="de">Điểm Chuẩn & Điều Kiện Xét Tuyển</h2>
+    <div class="containers">
+        <!-- <img class="images" src="./hinh/kythuat2.webp" alt="Ngành Kỹ thuật"> -->
+        <div class="texts">
+            <div class="section">
+                <h2>1. Xét tuyển kết quả kỳ thi tốt nghiệp THPT</h2>
+                <p><strong>Điều kiện xét tuyển:</strong></p>
+                <ul>
+                    <li>Tốt nghiệp THPT hoặc tương đương.</li>
+                    <li>Tham gia kỳ thi tốt nghiệp THPT.</li>
+                    <li>Đạt điểm đảm bảo chất lượng đầu vào đại học quy định.</li>
+                </ul>
+                <p><strong>Thời gian xét tuyển:</strong> Theo quy định của Bộ GD&ĐT.</p>
+            </div>
+        
+            <div class="section">
+                <h2>2. Xét tuyển học bạ theo tổng điểm trung bình 03 môn năm lớp 12</h2>
+                <p><strong>Điều kiện xét tuyển:</strong></p>
+                <ul>
+                    <li>Tốt nghiệp THPT.</li>
+                    <li>Tổng điểm xét tuyển và trúng tuyển theo quy định của Bộ GD&ĐT.</li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h2>3. Xét tuyển theo kết quả kỳ thi Đánh giá đầu vào Đại học V-SAT năm 2025 do Trung tâm Khảo thí quốc gia và Đánh giá Chất lượng Giáo dục (Cục Quản lý chất lượng, Bộ GD&ĐT) tổ chức hoặc xét tuyển kết quả kỳ thi Đánh giá năng lực (ĐGNL) 2025 của ĐHQG TP.HCM</h2>
+                <p><strong>Điều kiện xét tuyển:</strong></p>
+                <ul>
+                    <li>Tốt nghiệp THPT hoặc tương đương.</li>
+                    <li>Tham gia kỳ thi và có điểm thi đạt từ ngưỡng chất lượng đầu vào quy định.</li>
+                </ul>
+                <p><strong>Thời gian xét tuyển:</strong> Theo quy định của Bộ GD&ĐT.</p>
+            </div>
+
+            <div class="section">
+                <h2>Lưu ý:</h2>
+                <p class="note">Thí sinh cần theo dõi thông báo chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Công Lập Đào Tạo Ngành Kỹ Thuật</h2>
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hustHN.jpg" alt="Đại học Bách Khoa Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa Hà Nội</strong>
+                        <p>Trường đào tạo kỹ thuật hàng đầu với chương trình chuẩn quốc tế.</p>
+                        <a href="https://www.hust.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/congngheHN.jpg" alt="Đại học Công nghệ - ĐHQG Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Công nghệ - ĐHQG Hà Nội</strong>
+                        <p>Đào tạo chuyên sâu về kỹ thuật và công nghệ hiện đại.</p>
+                        <a href="https://uet.vnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/mta.jpg" alt="Học viện Kỹ thuật Quân sự">
+                    <div class="info">
+                        <strong>Học viện Kỹ thuật Quân sự</strong>
+                        <p>Đào tạo kỹ sư kỹ thuật với định hướng nghiên cứu và ứng dụng quân sự.</p>
+                        <a href="https://mta.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/haiu.jpg" alt="Đại học Công nghiệp Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Công nghiệp Hà Nội</strong>
+                        <p>Chương trình kỹ thuật thực tiễn và hợp tác doanh nghiệp.</p>
+                        <a href="https://www.haui.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/xaydung.jpg" alt="Đại học Xây dựng Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Xây dựng Hà Nội</strong>
+                        <p>Đào tạo kỹ sư xây dựng và các ngành kỹ thuật liên quan.</p>
+                        <a href="https://nuce.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/thuyloi.jpg" alt="Đại học Thủy lợi">
+                    <div class="info">
+                        <strong>Đại học Thủy lợi</strong>
+                        <p>Chuyên ngành kỹ thuật thủy lợi và các lĩnh vực kỹ thuật khác.</p>
+                        <a href="https://www.tlu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dut.jpg" alt="Đại học Bách Khoa - ĐH Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa - ĐH Đà Nẵng</strong>
+                        <p>Trường đào tạo kỹ thuật hàng đầu khu vực miền Trung.</p>
+                        <a href="https://dut.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/hueuni.jpg" alt="Đại học Khoa học - ĐH Huế">
+                    <div class="info">
+                        <strong>Đại học Khoa học - ĐH Huế</strong>
+                        <p>Đào tạo kỹ thuật với định hướng nghiên cứu và ứng dụng thực tế.</p>
+                        <a href="https://husc.hueuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/ute.jpg" alt="Đại học Sư phạm Kỹ thuật Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật Đà Nẵng</strong>
+                        <p>Chương trình kỹ thuật chú trọng thực hành và ứng dụng thực tế.</p>
+                        <a href="https://ute.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/qnu.jpg" alt="Đại học Quy Nhơn">
+                    <div class="info">
+                        <strong>Đại học Quy Nhơn</strong>
+                        <p>Chuyên ngành kỹ thuật với định hướng phát triển ứng dụng.</p>
+                        <a href="https://www.qnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/phuyenuni.jpg" alt="Đại học Phú Yên">
+                    <div class="info">
+                        <strong>Đại học Phú Yên</strong>
+                        <p>Đào tạo kỹ thuật với chương trình phù hợp khu vực miền Trung.</p>
+                        <a href="https://pyu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hcmut.jpg" alt="Đại học Bách Khoa TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa TP.HCM</strong>
+                        <p>Trường đào tạo kỹ thuật hàng đầu khu vực miền Nam với chương trình chuẩn quốc tế.</p>
+                        <a href="https://www.hcmut.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/sgu.jpg" alt="Đại học Sài Gòn">
+                    <div class="info">
+                        <strong>Đại học Sài Gòn</strong>
+                        <p>Đào tạo kỹ thuật với định hướng ứng dụng thực tiễn và nghiên cứu.</p>
+                        <a href="https://sgu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/ctu.jpg" alt="Đại học Cần Thơ">
+                    <div class="info">
+                        <strong>Đại học Cần Thơ</strong>
+                        <p>Trường đào tạo kỹ thuật đa ngành, phục vụ phát triển khu vực Đồng bằng sông Cửu Long.</p>
+                        <a href="https://www.ctu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/spkt.jpg" alt="Đại học Sư phạm Kỹ thuật TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật TP.HCM</strong>
+                        <p>Chương trình đào tạo kỹ thuật chú trọng thực hành và ứng dụng công nghệ.</p>
+                        <a href="https://hcmute.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/vlute.jpg" alt="Đại học Sư phạm Kỹ thuật Vĩnh Long">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật Vĩnh Long</strong>
+                        <p>Đào tạo kỹ thuật với định hướng phát triển nguồn nhân lực khu vực miền Tây.</p>
+                        <a href="https://vlute.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

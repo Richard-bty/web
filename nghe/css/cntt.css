@@ -1,0 +1,215 @@
+/* ========== Định dạng chung ========== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('../hinh/cntt3.webp') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.center-text {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.containers {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 2;
+}
+
+/* ========== Nội dung chung ========== */
+.contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    width: 80%;
+    margin: 20px auto;
+    background: rgb(215, 246, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.section h2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.sections {
+    width: 70%;
+    margin: 20px auto 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ========== Tiêu đề ========== */
+.de {
+    font-size: 17px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.region-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f13838;
+    margin: 20px 0 30px;
+    text-align: center;
+}
+
+/* ========== Ảnh minh họa ========== */
+.images {
+    width: 500px;
+    height: 300px;
+    margin-right: 16px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* ========== Nội dung văn bản ========== */
+.texts {
+    flex: 1;
+    font-size: 16px;
+    font-weight: normal;
+    align-items: center;
+}
+
+.texts p {
+    margin-bottom: 14px;
+}
+
+.texts h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texts ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+.texts ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* ========== Bố cục Grid các trường đại học ========== */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.university-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+}
+
+.university-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 8px;
+    text-align: center;
+}
+
+.info strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.info a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #378be6;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.info a:hover {
+    background: #0056b3;
+}
+
+/* ========== Hiệu ứng hover ========== */
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #84a7cc; /* màu xanh dương */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    
+}
+/* ========== Responsive ========== */
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sections {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .containers {
+        flex-direction: column;
+    }
+    .images {
+        width: 100%;
+        max-width: 300px;
+    }
+    .sections {
+        width: 90%;
+    }
+}

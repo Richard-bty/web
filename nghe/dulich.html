@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Du Lịch
+    </title>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Ngành Du lịch</h1>
+        <section class="sections">
+            <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+            <div class="containers">
+                <!-- <img class="images" src="./hinh/cntt1.webp" alt="Ngành CNTT"> -->
+                <div class="texts">
+                    <h1>Ngành này là gì? Học gì?</h1>
+                    <p>Du lịch là ngành kinh tế bao gồm các hoạt động liên quan đến việc di chuyển của con người từ nơi cư trú của họ đến các địa điểm khác để tham quan, nghỉ dưỡng, công tác, hoặc tìm kiếm các trải nghiệm mới
+                        Ngành du lịch không chỉ đóng góp vào nền kinh tế của một quốc gia mà còn giúp bảo tồn và phát triển văn hóa, truyền thống, và những di sản thiên nhiên của đất nướt.
+                    </p>
+                    <p>Ngành này học về:</p>
+                    <ul>
+                        <li>Quản lý du lịch</li>
+                        <li>Văn hóa và di sản</li>
+                        <li>An toàn và bảo vệ môi trường</li>
+                        <li>Kinh tế và marketing du lịch</li>
+                    </ul>
+
+                    <h1>Mức lương trung bình</h1>
+                    <ul>
+                     <li>Hướng dẫn viên du lịch mới ra trường có mức lương dao động từ 8 – 15 triệu đồng/tháng.</li>
+                     <li>Nhân viên điều hành tour có mức lương dao động từ 8 – 10 triệu đồng/tháng.</li>
+                     <li>Nhân viên sales tour mảng du lịch có mức lương trong khoảng 10 – 12 triệu đồng/tháng.</li>
+                     <li>Nhân viên PR, Marketing mảng du lịch sẽ có lương dao động từ 8 – 10 triệu đồng/tháng.</li>
+                     <li>Lễ tân Nhà hàng – Khách sạn có mức lương trong khoảng 7 – 9 triệu đồng/tháng.</li>
+                     <li>Quản lý Nhà hàng – Khách sạn mức lương từ 15 – 18 triệu đồng/tháng.</li>
+                    </ul>
+                    <p>mức lương có thể thay đổi theo khu vực và nhu cầu của thị trường, đặc biệt ở các thành phố lớn như Hà Nội, TP. Hồ Chí Minh, hoặc các khu du lịch nổi tiếng.</p>
+                    <p>Ngoài mức lương cố định, một số công ty còn cung cấp các khoản thưởng hoặc hoa hồng tùy thuộc vào hiệu suất công việc</p>
+                </div>
+            </div>
+        </section>
+        <section class="sections">
+            <h2 class="de">
+                Điểm Chuẩn & Điều Kiện Xét Tuyển
+            </h2>
+            <div class="containers">
+                <!-- <img class="images" src="./hinh/cntt2.webp" alt="Ngành CNTT"> -->
+                <div class="texts">
+                    <div class="section">
+                        <h2>Phương thức 1: Xét tuyển dựa vào kết quả thi tốt nghiệp THPT</h2>
+                        <p><strong>Điều kiện:</strong> Thí sinh đã tốt nghiệp THPT hoặc tương đương.</p>
+                        <p><strong>Tiêu chí xét tuyển:</strong> Tổng điểm 3 môn trong tổ hợp xét tuyển + điểm ưu tiên (nếu có).</p>
+                        <p><strong>Tổ hợp xét tuyển:</strong></p>
+                        <ul>
+                            <li>A00: Toán, Vật lý, Hóa học</li>
+                            <li>A01: Toán, Vật lý, Tiếng Anh</li>
+                            <li>D01: Ngữ văn, Toán, Tiếng Anh</li>
+                            <li>C00: Ngữ văn, Lịch sử, Địa lý</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Phương thức 2: Xét tuyển dựa vào kết quả học tập THPT</h2>
+                        <p><strong>Điều kiện:</strong></p>
+                        <ul>
+                            <li>Tốt nghiệp THPT hoặc tương đương.</li>
+                            <li>Học lực lớp 12 đạt loại Trung bình trở lên.</li>
+                        </ul>
+                        <p><strong>Tiêu chí xét tuyển:</strong> Điểm trung bình chung học tập 3 môn trong tổ hợp xét tuyển năm lớp 12.</p>
+                        <p><strong>Tổ hợp xét tuyển:</strong> Tương tự phương thức 1.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Phương thức 3: Xét tuyển thẳng</h2>
+                        <p><strong>Đối tượng:</strong></p>
+                        <ul>
+                            <li>Thí sinh đạt giải trong kỳ thi học sinh giỏi quốc gia.</li>
+                            <li>Thí sinh đạt giải trong cuộc thi khoa học kỹ thuật cấp quốc gia.</li>
+                            <li>Thí sinh đạt huy chương trong các giải thể thao quốc tế.</li>
+                        </ul>
+                        <p><strong>Điều kiện:</strong> Tốt nghiệp THPT hoặc tương đương.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Lưu ý:</h2>
+                        <p class="note">Thí sinh cần theo dõi thông báo chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất về tuyển sinh năm 2025.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu</h2>
+
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dtu.jpg" alt="Trường Đại học Duy Tân">
+                    <div class="info">
+                        <strong>Trường Đại học Duy Tân (DTU)</strong>
+                        <a href="https://duytan.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/hbnc.jpg" alt="Trường Cao đẳng Bách Nghệ Hà Nội">
+                    <div class="info">
+                        <strong>Trường Cao đẳng Bách Nghệ Hà Nội</strong>
+                        <a href="https://hbnc.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/buv.jpg" alt="Trường Đại học Anh Quốc Việt Nam">
+                    <div class="info">
+                        <strong>Trường Đại học Anh Quốc Việt Nam (BUV)</strong>
+                        <a href="https://www.buv.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dainam.jpg" alt="Trường Đại học Đại Nam">
+                    <div class="info">
+                        <strong>Trường Đại học Đại Nam</strong>
+                        <a href="https://www.dainam.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/fpt.jpg" alt="Trường Đại học FPT">
+                    <div class="info">
+                        <strong>Trường Đại học FPT (FPT)</strong>
+                        <a href="https://daihoc.fpt.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/hubt.jpg" alt="Trường Đại học Kinh doanh và Công nghệ Hà Nội">
+                    <div class="info">
+                        <strong>Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)</strong>
+                        <a href="https://hubt.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/phenikaa.jpg" alt="Trường Đại học Phenikaa">
+                    <div class="info">
+                        <strong>Trường Đại học Phenikaa (PhenikaaUni)</strong>
+                        <a href="https://phenikaa-uni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/tlu.jpg" alt="Trường Đại học Thăng Long">
+                    <div class="info">
+                        <strong>Trường Đại học Thăng Long (TLU)</strong>
+                        <a href="https://thanglong.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dtu.jpg" alt="Trường Đại học Duy Tân">
+                    <div class="info">
+                        <strong>Trường Đại học Duy Tân (DTU)</strong>
+                        <a href="https://duytan.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hutech.jpg" alt="Trường Đại học Công nghệ TPHCM">
+                    <div class="info">
+                        <strong>Trường Đại học Công nghệ TPHCM (HUTECH)</strong>
+                        <a href="https://www.hutech.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/hoasen.jpg" alt="Trường Đại học Hoa Sen">
+                    <div class="info">
+                        <strong>Trường Đại học Hoa Sen (HSU)</strong>
+                        <a href="https://www.hoasen.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/uef.jpg" alt="Trường Đại học Kinh tế - Tài chính TP.HCM">
+                    <div class="info">
+                        <strong>Trường Đại học Kinh tế - Tài chính TP.HCM (UEF)</strong>
+                        <a href="https://www.uef.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/huflit.jpg" alt="Trường Đại học Ngoại ngữ - Tin học TP.HCM">
+                    <div class="info">
+                        <strong>Trường Đại học Ngoại ngữ - Tin học TP.HCM (HUFLIT)</strong>
+                        <a href="https://huflit.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/nttu.jpg" alt="Trường Đại học Nguyễn Tất Thành">
+                    <div class="info">
+                        <strong>Trường Đại học Nguyễn Tất Thành (NTTU)</strong>
+                        <a href="https://ntt.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

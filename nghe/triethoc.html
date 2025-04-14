@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành Triết Học
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Ngành Triết Học</h1>
+        <section class="sections">
+            <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+            <div class="containers">
+                <div class="texts">
+                    <h1>Ngành này là gì? Học gì?</h1>
+                    <p>Ngành Triết Học là ngành học nghiên cứu về các lý thuyết và tri thức về thế giới, con người, và vũ trụ. Các môn học trong ngành này tập trung vào các vấn đề cơ bản của tư tưởng, logic học, đạo đức học, và bản chất của sự tồn tại. Sinh viên học triết học sẽ nghiên cứu các trường phái triết học, từ cổ điển đến hiện đại, và ứng dụng những lý thuyết này để hiểu và phân tích các vấn đề xã hội, nhân sinh, chính trị, và khoa học.</p>
+    
+                    <h1>Ngành này học về:</h1>
+                    <ul>
+                        <li>Phân tích các hệ thống triết học phương Tây và phương Đông.</li>
+                        <li>Đạo đức học và lý thuyết đạo đức.</li>
+                        <li>Logic học và tư duy phản biện.</li>
+                        <li>Triết học khoa học và các vấn đề liên quan đến tiến bộ khoa học.</li>
+                        <li>Triết lý xã hội, chính trị và các vấn đề liên quan đến tự do, quyền lực, và công lý.</li>
+                    </ul>
+    
+                    <h1>Mức lương trung bình</h1>
+                    <ul>
+                        <li>Giảng viên triết học: Lương từ 12-20 triệu đồng/tháng.</li>
+                        <li>Chuyên viên nghiên cứu triết học: Lương từ 15-25 triệu đồng/tháng.</li>
+                        <li>Nhà nghiên cứu xã hội: Lương từ 18-30 triệu đồng/tháng.</li>
+                        <li>Chuyên gia tư vấn đạo đức: Lương từ 20 triệu đồng/tháng trở lên.</li>
+                    </ul>
+                    <p>Ngành Triết Học có thể không mang lại mức thu nhập cao như các ngành nghề khác, nhưng lại cung cấp cơ hội để làm việc trong các tổ chức nghiên cứu, giáo dục, chính trị và các tổ chức xã hội, nơi có thể đóng góp vào việc cải thiện tư duy và nhận thức xã hội.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="sections">
+            <h2 class="de">Điểm Chuẩn & Điều Kiện Xét Tuyển</h2>
+            <div class="containers">
+                <div class="texts">
+                    <div class="section">
+                        <h2>1. Phương thức 1: Xét tuyển thẳng và ưu tiên xét tuyển</h2>
+                        <ul>
+                            <li>Áp dụng theo quy định của Bộ Giáo dục và Đào tạo.</li>
+                            <li>Ưu tiên xét tuyển cho thí sinh đạt giải trong kỳ thi học sinh giỏi quốc gia.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>2. Phương thức 2: Xét tuyển theo kết quả thi tốt nghiệp THPT</h2>
+                        <ul>
+                            <li>Sử dụng kết quả kỳ thi tốt nghiệp THPT năm 2025.</li>
+                            <li><strong>Điểm xét tuyển:</strong> Tổng điểm 3 môn thi theo tổ hợp + Điểm ưu tiên (nếu có).</li>
+                            <li><strong>Tổ hợp xét tuyển:</strong>
+                                <ul>
+                                    <li>Văn, Sử, Địa (C00)</li>
+                                    <li>Văn, Sử, Giáo dục công dân (C19)</li>
+                                    <li>Văn, Sử, Tiếng Anh (D14)</li>
+                                    <li>Văn, Địa, Tiếng Anh (D15)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>3. Phương thức 3: Xét tuyển học bạ</h2>
+                        <ul>
+                            <li>Xét kết quả học tập 6 học kỳ THPT.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>4. Phương thức 4: Xét tuyển kết quả thi đánh giá năng lực của ĐHQGHN</h2>
+                        <ul>
+                            <li>Sử dụng kết quả kỳ thi đánh giá năng lực do ĐHQGHN tổ chức.</li>
+                            <li>Thí sinh cần đạt ngưỡng điểm tối thiểu do trường quy định.</li>
+                            <li><strong>Điểm xét tuyển:</strong> Điểm bài thi ĐGNL + Điểm ưu tiên (nếu có).</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>Lưu ý:</h2>
+                        <p class="note">Thí sinh cần theo dõi thông báo chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu</h2>
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/vnu.jpg" alt="Đại học Khoa học Xã hội và Nhân văn - ĐHQG Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Khoa học Xã hội và Nhân văn - ĐHQG Hà Nội</strong>
+                        <p>Trường đào tạo hàng đầu về ngành Triết học với chương trình chuyên sâu.</p>
+                        <a href="https://ussh.vnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/hanhchinh.jpg" alt="Học viện Hành chính Quốc gia">
+                    <div class="info">
+                        <strong>Học viện Hành chính Quốc gia</strong>
+                        <p>Đào tạo Triết học gắn liền với các vấn đề quản lý và hành chính công.</p>
+                        <a href="https://www1.napa.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/sgu.jpg" alt="Đại học Sư phạm Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Hà Nội</strong>
+                        <p>Đào tạo ngành Triết học với định hướng giảng dạy và nghiên cứu.</p>
+                        <a href="https://hnue.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/luat.jpg" alt="Đại học Luật Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Luật Hà Nội</strong>
+                        <p>Chương trình Triết học tập trung vào các vấn đề pháp lý và xã hội.</p>
+                        <a href="https://hlu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/hoasen.jpg" alt="Học viện Chính trị Quốc gia Hồ Chí Minh">
+                    <div class="info">
+                        <strong>Học viện Chính trị Quốc gia Hồ Chí Minh</strong>
+                        <p>Đào tạo Triết học gắn liền với các vấn đề chính trị và tư tưởng.</p>
+                        <a href="https://hcma.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dut.jpg" alt="Đại học Khoa học - ĐH Huế">
+                    <div class="info">
+                        <strong>Đại học Khoa học - ĐH Huế</strong>
+                        <p>Đào tạo ngành Triết học với định hướng nghiên cứu và ứng dụng thực tế.</p>
+                        <a href="https://husc.hueuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dntu.jpg" alt="Đại học Sư phạm - ĐH Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Sư phạm - ĐH Đà Nẵng</strong>
+                        <p>Chương trình Triết học tập trung vào giảng dạy và nghiên cứu.</p>
+                        <a href="https://ued.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/qnu.jpg" alt="Đại học Quy Nhơn">
+                    <div class="info">
+                        <strong>Đại học Quy Nhơn</strong>
+                        <p>Đào tạo ngành Triết học với định hướng phát triển tư duy và nhận thức xã hội.</p>
+                        <a href="https://www.qnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/phuyen.jpg" alt="Đại học Phú Yên">
+                    <div class="info">
+                        <strong>Đại học Phú Yên</strong>
+                        <p>Chương trình Triết học gắn liền với các vấn đề giáo dục và xã hội.</p>
+                        <a href="https://pyu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dhnth.jpg" alt="Đại học Nha Trang">
+                    <div class="info">
+                        <strong>Đại học Nha Trang</strong>
+                        <p>Đào tạo ngành Triết học với định hướng nghiên cứu và ứng dụng thực tiễn.</p>
+                        <a href="https://ntu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/usshhcm.jpg" alt="Đại học Khoa học Xã hội và Nhân văn - ĐHQG TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Khoa học Xã hội và Nhân văn - ĐHQG TP.HCM</strong>
+                        <p>Trường đào tạo hàng đầu về ngành Triết học tại khu vực miền Nam.</p>
+                        <a href="https://hcmussh.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/sgu.jpg" alt="Đại học Sài Gòn">
+                    <div class="info">
+                        <strong>Đại học Sài Gòn</strong>
+                        <p>Đào tạo ngành Triết học với định hướng giảng dạy và nghiên cứu.</p>
+                        <a href="https://sgu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/ctu.jpg" alt="Đại học Cần Thơ">
+                    <div class="info">
+                        <strong>Đại học Cần Thơ</strong>
+                        <p>Đào tạo ngành Triết học gắn liền với các vấn đề xã hội và giáo dục.</p>
+                        <a href="https://ctu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/thu-dau-mot.jpg" alt="Đại học Thủ Dầu Một">
+                    <div class="info">
+                        <strong>Đại học Thủ Dầu Một</strong>
+                        <p>Chương trình Triết học tập trung vào nghiên cứu và ứng dụng thực tiễn.</p>
+                        <a href="https://tdmu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dn.jpg" alt="Đại học Đồng Nai">
+                    <div class="info">
+                        <strong>Đại học Đồng Nai</strong>
+                        <p>Đào tạo ngành Triết học với định hướng phát triển tư duy và nhận thức xã hội.</p>
+                        <a href="https://dnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

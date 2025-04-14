@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành Nông Lâm
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Ngành Nông Lâm</h1>
+    <section class="sections">
+        <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+        <div class="containers">
+            <div class="texts">
+                <h1>Ngành này là gì? Học gì?</h1>
+                <p>Ngành Nông Lâm là ngành học nghiên cứu về sản xuất và quản lý các nguồn tài nguyên nông nghiệp, lâm nghiệp, thủy sản, cũng như bảo vệ môi trường tự nhiên. Ngành này không chỉ tập trung vào việc phát triển cây trồng, vật nuôi mà còn nghiên cứu về các yếu tố tác động đến hệ sinh thái như khí hậu, đất đai và tài nguyên nước. Sinh viên ngành Nông Lâm sẽ học các kiến thức về khoa học nông nghiệp, kỹ thuật canh tác, bảo vệ thực vật, quản lý tài nguyên, chế biến nông sản, và các kỹ năng quản lý kinh tế nông nghiệp.</p>
+
+                <h1>Ngành này học về:</h1>
+                <ul>
+                    <li>Quản lý tài nguyên thiên nhiên (nước, đất, rừng).</li>
+                    <li>Kỹ thuật canh tác và nuôi trồng.</li>
+                    <li>Bảo vệ thực vật và thú y.</li>
+                    <li>Công nghệ chế biến thực phẩm và nông sản.</li>
+                    <li>Quản lý nông nghiệp và lâm nghiệp bền vững.</li>
+                </ul>
+
+                <h1>Mức lương trung bình</h1>
+                <ul>
+                    <li>Kỹ sư nông nghiệp, lâm nghiệp: Lương từ 10-20 triệu đồng/tháng.</li>
+                    <li>Chuyên viên tư vấn nông nghiệp, kỹ thuật viên: Lương từ 15-25 triệu đồng/tháng.</li>
+                    <li>Quản lý và giám sát nông lâm sản xuất: Lương từ 20-35 triệu đồng/tháng.</li>
+                    <li>Chuyên gia nghiên cứu và phát triển công nghệ nông nghiệp: Lương từ 30 triệu đồng/tháng trở lên.</li>
+                </ul>
+                <p>Ngành Nông Lâm có nhiều cơ hội nghề nghiệp trong các lĩnh vực nghiên cứu, phát triển sản phẩm nông sản, bảo vệ môi trường, và các công ty chế biến thực phẩm, nông sản. Đây là ngành học phù hợp với những ai đam mê nông nghiệp, bảo vệ tài nguyên thiên nhiên và phát triển bền vững.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sections">
+        <h2 class="de">Điểm Chuẩn & Điều Kiện Xét Tuyển</h2>
+        <div class="containers">
+            <div class="texts">
+                <div class="section">
+                    <h2>1. Tuyển thẳng và ưu tiên xét tuyển</h2>
+                    <p>Thực hiện theo quy định của Bộ Giáo dục và Đào tạo và quy chế tuyển sinh của trường.</p>
+                    <p><strong>Áp dụng cho các đối tượng tuyển thẳng:</strong></p>
+                    <ul>
+                        <li>Học sinh giỏi quốc gia, Olympic quốc tế, v.v.</li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>2. Xét tuyển dựa trên kết quả kỳ thi đánh giá năng lực</h2>
+                    <p><strong>Sử dụng kết quả kỳ thi:</strong> Kỳ thi đánh giá năng lực do Đại học tổ chức.</p>
+                    <p><strong>Lưu ý:</strong> Phương thức này không áp dụng cho ngành Giáo dục mầm non.</p>
+                </div>
+            
+                <div class="section">
+                    <h2>3. Xét tuyển dựa trên kết quả thi tốt nghiệp THPT</h2>
+                    <p><strong>Sử dụng điểm thi:</strong> Điểm các môn thi tốt nghiệp THPT theo tổ hợp xét tuyển của từng ngành.</p>
+                </div>
+            
+                <div class="section">
+                    <h2>4. Xét kết hợp điểm thi THPT và học bạ</h2>
+                    <p><strong>Sử dụng điểm thi THPT 2025 kết hợp với điểm học bạ THPT:</strong> Thí sinh được thay thế điểm 1 môn thi bằng điểm trung bình môn học 3 năm THPT (trừ Toán và Văn).</p>
+                    <p><strong>Lưu ý:</strong> Phương thức này không áp dụng cho ngành Giáo dục mầm non.</p>
+                </div>
+            
+                <div class="section">
+                    <h2>5. Xét tuyển học bạ THPT</h2>
+                    <p><strong>Sử dụng điểm trung bình các môn học 3 năm THPT:</strong> Theo tổ hợp xét tuyển.</p>
+                    <p><strong>Tại cơ sở chính:</strong> Chỉ xét thí sinh tốt nghiệp THPT năm 2025.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Lưu ý:</h2>
+                    <p class="note">Thí sinh cần theo dõi thông báo chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu</h2>
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/nuce.jpg" alt="Học viện Nông nghiệp Việt Nam">
+                    <div class="info">
+                        <strong>Học viện Nông nghiệp Việt Nam</strong>
+                        <p>Trường đào tạo hàng đầu về nông nghiệp, lâm nghiệp và phát triển nông thôn.</p>
+                        <a href="https://vnua.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/tnu.jpg" alt="Đại học Nông Lâm - Đại học Thái Nguyên">
+                    <div class="info">
+                        <strong>Đại học Nông Lâm - Đại học Thái Nguyên</strong>
+                        <p>Đào tạo chuyên sâu về nông nghiệp, lâm nghiệp và môi trường.</p>
+                        <a href="https://tuaf.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/forestry.jpg" alt="Đại học Lâm nghiệp Việt Nam">
+                    <div class="info">
+                        <strong>Đại học Lâm nghiệp Việt Nam</strong>
+                        <p>Chuyên đào tạo về lâm nghiệp, quản lý tài nguyên rừng và môi trường.</p>
+                        <a href="https://vnuf.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/hmu.jpg" alt="Đại học Tài nguyên và Môi trường Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Tài nguyên và Môi trường Hà Nội</strong>
+                        <p>Đào tạo về quản lý tài nguyên thiên nhiên và môi trường bền vững.</p>
+                        <a href="https://hunre.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dut.jpg" alt="Đại học Nông Lâm - Đại học Huế">
+                    <div class="info">
+                        <strong>Đại học Nông Lâm - Đại học Huế</strong>
+                        <p>Trường đào tạo chuyên sâu về nông nghiệp, lâm nghiệp và phát triển nông thôn.</p>
+                        <a href="https://huaf.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dntu.jpg" alt="Đại học Nông Lâm - Đại học Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Nông Lâm - Đại học Đà Nẵng</strong>
+                        <p>Đào tạo các ngành liên quan đến nông nghiệp, lâm nghiệp và môi trường.</p>
+                        <a href="https://dut.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/qnu.jpg" alt="Đại học Quy Nhơn">
+                    <div class="info">
+                        <strong>Đại học Quy Nhơn</strong>
+                        <p>Đào tạo ngành nông lâm với định hướng phát triển bền vững.</p>
+                        <a href="https://www.qnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/udn.jpg" alt="Đại học Sư phạm Kỹ thuật Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật Đà Nẵng</strong>
+                        <p>Đào tạo các ngành kỹ thuật liên quan đến nông nghiệp và lâm nghiệp.</p>
+                        <a href="https://ute.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/phanthiet.jpg" alt="Đại học Phan Thiết">
+                    <div class="info">
+                        <strong>Đại học Phan Thiết</strong>
+                        <p>Đào tạo các ngành nông lâm với định hướng ứng dụng thực tiễn.</p>
+                        <a href="https://upt.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/thuathienhue.jpg" alt="Đại học Khoa học - Đại học Huế">
+                    <div class="info">
+                        <strong>Đại học Khoa học - Đại học Huế</strong>
+                        <p>Đào tạo các ngành liên quan đến khoa học nông lâm và môi trường.</p>
+                        <a href="https://husc.hueuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/ctu.jpg" alt="Đại học Cần Thơ">
+                    <div class="info">
+                        <strong>Đại học Cần Thơ</strong>
+                        <p>Trường đào tạo hàng đầu về nông nghiệp, thủy sản và phát triển nông thôn tại miền Nam.</p>
+                        <a href="https://www.ctu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/agrihcm.jpg" alt="Đại học Nông Lâm TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Nông Lâm TP.HCM</strong>
+                        <p>Chuyên đào tạo về nông nghiệp, lâm nghiệp, thủy sản và công nghệ thực phẩm.</p>
+                        <a href="https://www.hcmuaf.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/vlute.jpg" alt="Đại học Sư phạm Kỹ thuật Vĩnh Long">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật Vĩnh Long</strong>
+                        <p>Đào tạo các ngành kỹ thuật và công nghệ liên quan đến nông nghiệp và phát triển bền vững.</p>
+                        <a href="https://vlute.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/thu-dau-mot.jpg" alt="Đại học Thủ Dầu Một">
+                    <div class="info">
+                        <strong>Đại học Thủ Dầu Một</strong>
+                        <p>Đào tạo các ngành nông lâm và quản lý tài nguyên thiên nhiên.</p>
+                        <a href="https://tdmu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dongthap.jpg" alt="Đại học Đồng Tháp">
+                    <div class="info">
+                        <strong>Đại học Đồng Tháp</strong>
+                        <p>Đào tạo các ngành liên quan đến nông nghiệp, lâm nghiệp và môi trường.</p>
+                        <a href="https://dthu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/an-giang.jpg" alt="Đại học An Giang">
+                    <div class="info">
+                        <strong>Đại học An Giang</strong>
+                        <p>Đào tạo chuyên sâu về nông nghiệp, thủy sản và phát triển nông thôn.</p>
+                        <a href="https://www.agu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div></div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

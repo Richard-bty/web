@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành Môi Trường
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Ngành Môi Trường</h1>
+    <section class="sections">
+        <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+        <div class="containers">
+            <div class="texts">
+                <h1>Ngành này là gì? Học gì?</h1>
+                <p>Ngành Môi trường tập trung vào việc nghiên cứu và giải quyết các vấn đề về bảo vệ môi trường tự nhiên, bảo vệ tài nguyên thiên nhiên và ứng phó với các thách thức môi trường toàn cầu. Đây là một ngành học quan trọng trong bối cảnh hiện nay, khi mà các vấn đề về ô nhiễm, biến đổi khí hậu, và suy thoái môi trường đang ngày càng trở nên nghiêm trọng.</p>
+                <p>Ngành này học về:</p>
+                <ul>
+                    <li>Nguyên nhân và tác động của ô nhiễm môi trường đối với sức khỏe con người và hệ sinh thái.</li>
+                    <li>Các giải pháp và công nghệ bảo vệ môi trường, từ xử lý chất thải đến phát triển năng lượng tái tạo.</li>
+                    <li>Quản lý tài nguyên thiên nhiên bền vững và phát triển xanh.</li>
+                    <li>Chính sách và luật pháp về môi trường, cùng với những chiến lược bảo vệ môi trường tại các cấp độ khác nhau.</li>
+                </ul>
+
+                <h1>Mức lương trung bình</h1>
+                <ul>
+                    <li>Cử nhân Môi trường mới ra trường: Lương dao động từ 8-12 triệu đồng/tháng.</li>
+                    <li>Nhân viên môi trường tại các công ty, tổ chức: Lương dao động từ 12-18 triệu đồng/tháng.</li>
+                    <li>Chuyên gia môi trường hoặc nhà nghiên cứu: Lương có thể từ 20-30 triệu đồng/tháng hoặc cao hơn, tùy vào vị trí và kinh nghiệm.</li>
+                </ul>
+                <p>Các tổ chức quốc tế, các công ty lớn và các dự án môi trường thường trả mức lương cao cho các chuyên gia có kinh nghiệm trong lĩnh vực này.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="sections">
+        <h2 class="de">Điểm Chuẩn & Điều Kiện Xét Tuyển</h2>
+        <div class="containers">
+            <div class="texts">
+                <div class="section">
+                    <h2>1. Xét tuyển dựa trên kết quả thi tốt nghiệp THPT</h2>
+                    <p><strong>Điều kiện xét tuyển:</strong></p>
+                    <ul>
+                        <li>Thí sinh tốt nghiệp THPT.</li>
+                        <li>Sử dụng điểm 3 môn thi tốt nghiệp THPT thuộc các tổ hợp xét tuyển của trường.</li>
+                        <li><strong>Điểm xét tuyển =</strong> Tổng điểm 3 môn thi + Điểm ưu tiên (nếu có).</li>
+                        <li>Điểm chuẩn sẽ được công bố sau khi có kết quả thi tốt nghiệp THPT.</li>
+                    </ul>
+                    <p><strong>Các tổ hợp xét tuyển:</strong></p>
+                    <ul>
+                        <li>A00: Toán, Lý, Hóa</li>
+                        <li>A01: Toán, Lý, Anh</li>
+                        <li>A02: Toán, Lý, Sinh</li>
+                        <li>B00: Toán, Hóa, Sinh</li>
+                        <li>D01: Toán, Văn, Anh</li>
+                        <li>D07: Toán, Hóa, Anh</li>
+                        <li>D08: Toán, Sinh, Anh</li>
+                        <li>D15: Địa, Văn, Anh</li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>2. Xét tuyển học bạ THPT</h2>
+                    <p><strong>Điều kiện xét tuyển:</strong></p>
+                    <ul>
+                        <li>Tốt nghiệp THPT.</li>
+                        <li>Xét điểm trung bình cả năm lớp 12 của 3 môn thuộc tổ hợp xét tuyển.</li>
+                        <li><strong>Điểm xét tuyển =</strong> Tổng điểm trung bình 3 môn + Điểm ưu tiên.</li>
+                        <li><strong>Điểm xét tuyển tối thiểu:</strong> 18 điểm.</li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>3. Xét tuyển thẳng</h2>
+                    <p><strong>Điều kiện xét tuyển:</strong></p>
+                    <ul>
+                        <li>Áp dụng cho thí sinh đạt giải trong các kỳ thi học sinh giỏi quốc gia, quốc tế.</li>
+                        <li>Thí sinh tốt nghiệp chương trình THPT chuyên của các trường ĐH.</li>
+                        <li>Thí sinh có chứng chỉ tiếng Anh quốc tế IELTS từ 5.5 trở lên hoặc tương đương.</li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>4. Xét tuyển riêng</h2>
+                    <p><strong>Điều kiện xét tuyển:</strong></p>
+                    <ul>
+                        <li>Tổ chức thi đánh giá năng lực chuyên biệt của trường.</li>
+                        <li>Phỏng vấn trực tiếp đánh giá năng lực, sở trường của thí sinh.</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Lưu ý:</h2>
+                    <p class="note">Thí sinh cần theo dõi thông báo chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất.</p>
+                </div>
+            </div>
+        </div>
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu</h2>
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hustHN.jpg" alt="Đại học Bách Khoa Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa Hà Nội</strong>
+                        <p>Đào tạo ngành Môi trường với chương trình chất lượng cao, chú trọng nghiên cứu và ứng dụng.</p>
+                        <a href="https://www.hust.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/congngheHN.jpg" alt="Đại học Khoa học Tự nhiên - ĐHQG Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Khoa học Tự nhiên - ĐHQG Hà Nội</strong>
+                        <p>Chuyên sâu về Khoa học Môi trường và Quản lý Tài nguyên.</p>
+                        <a href="https://hus.vnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/nuce.jpg" alt="Đại học Xây dựng Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Xây dựng Hà Nội</strong>
+                        <p>Đào tạo ngành Kỹ thuật Môi trường với định hướng thực tiễn và ứng dụng.</p>
+                        <a href="https://nuce.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/tnmt.jpg" alt="Đại học Tài nguyên và Môi trường Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Tài nguyên và Môi trường Hà Nội</strong>
+                        <p>Chuyên ngành Môi trường và Quản lý Tài nguyên, phù hợp với xu hướng phát triển bền vững.</p>
+                        <a href="https://hunre.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/nongnghiep.jpg" alt="Học viện Nông nghiệp Việt Nam">
+                    <div class="info">
+                        <strong>Học viện Nông nghiệp Việt Nam</strong>
+                        <p>Đào tạo ngành Môi trường với trọng tâm vào nông nghiệp bền vững và bảo vệ tài nguyên.</p>
+                        <a href="https://vnua.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dut.jpg" alt="Đại học Bách Khoa - ĐH Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa - ĐH Đà Nẵng</strong>
+                        <p>Đào tạo ngành Môi trường với chương trình chất lượng cao, chú trọng nghiên cứu và ứng dụng.</p>
+                        <a href="https://dut.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/huein.jpg" alt="Đại học Khoa học - ĐH Huế">
+                    <div class="info">
+                        <strong>Đại học Khoa học - ĐH Huế</strong>
+                        <p>Chuyên sâu về Khoa học Môi trường và Quản lý Tài nguyên.</p>
+                        <a href="https://husc.hueuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/qnu.jpg" alt="Đại học Quy Nhơn">
+                    <div class="info">
+                        <strong>Đại học Quy Nhơn</strong>
+                        <p>Đào tạo ngành Môi trường với định hướng phát triển bền vững và ứng dụng thực tiễn.</p>
+                        <a href="https://www.qnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/udn.jpg" alt="Đại học Sư phạm Kỹ thuật Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật Đà Nẵng</strong>
+                        <p>Chương trình đào tạo ngành Môi trường chú trọng thực hành và ứng dụng thực tế.</p>
+                        <a href="https://ute.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/nonglamhue.jpg" alt="Đại học Nông Lâm - ĐH Huế">
+                    <div class="info">
+                        <strong>Đại học Nông Lâm - ĐH Huế</strong>
+                        <p>Đào tạo ngành Môi trường với trọng tâm vào nông nghiệp bền vững và bảo vệ tài nguyên.</p>
+                        <a href="https://huaf.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hcmut.jpg" alt="Đại học Bách Khoa TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa TP.HCM</strong>
+                        <p>Đào tạo ngành Môi trường với chương trình chất lượng cao, chú trọng nghiên cứu và ứng dụng.</p>
+                        <a href="https://www.hcmut.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/vnuhcm.jpg" alt="Đại học Khoa học Tự nhiên - ĐHQG TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Khoa học Tự nhiên - ĐHQG TP.HCM</strong>
+                        <p>Chuyên sâu về Khoa học Môi trường và Quản lý Tài nguyên.</p>
+                        <a href="https://www.hcmus.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/nonglamhcm.jpg" alt="Đại học Nông Lâm TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Nông Lâm TP.HCM</strong>
+                        <p>Đào tạo ngành Môi trường với trọng tâm vào nông nghiệp bền vững và bảo vệ tài nguyên.</p>
+                        <a href="https://www.hcmuaf.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/tnmtHCM.jpg" alt="Đại học Tài nguyên và Môi trường TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Tài nguyên và Môi trường TP.HCM</strong>
+                        <p>Chuyên ngành Môi trường và Quản lý Tài nguyên, phù hợp với xu hướng phát triển bền vững.</p>
+                        <a href="https://hcmunre.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

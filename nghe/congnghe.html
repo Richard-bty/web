@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành Công Nghệ Thông Tin
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+    <h1 class="center-text">Ngành Công Nghệ Thông Tin</h1>
+    <section class="sections">
+        <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+        <div class="containers">
+            <img class="images" src="./hinh/cntt1.webp" alt="Ngành CNTT">
+            <div class="texts">
+                <p>
+                    <strong>Ngành này là gì? Học gì?</strong>
+                </p>
+                <p>Ngành Công nghệ thông tin (viết tắt là IT) là ngành khoa học kỹ thuật sử dụng máy tính và các phần
+                    mềm máy
+                    tính, mạng lưới internet để lưu trữ, bảo vệ xử lý, trao đổi, thu thập và sử dụng thông tin.</p>
+                <p>Ngành này học về:</p>
+                <ul>
+                    <li>Lập trình & Phát triển phần mềm</li>
+                    <li>Hệ thống máy tính & Mạng</li>
+                    <li>Dữ liệu & Trí tuệ nhân tạo (AI)</li>
+                    <li>An ninh mạng & Bảo mật thông tin</li>
+                    <li>UX/UI & Thiết kế phần mềm</li>
+                </ul>
+
+                <strong>Mức lương trung bình</strong>
+                <p>Mức lương của ngành này cao hơn những ngành khác, cụ thể:</p>
+                <ul>
+                    <li>Sinh viên mới ra trường (0 - 1 năm kinh nghiệm) 10 - 15 triệu VNĐ</li>
+                    <li> Junior Developer (1 - 3 năm kinh nghiệm) 15 - 25 triệu VNĐ</li>
+                    <li> Middle Developer (3 - 5 năm kinh nghiệm) 25 - 40 triệu VNĐ</li>
+                    <li> Senior Developer (5 - 10 năm kinh nghiệm) 40 - 70 triệu VNĐ</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="sections">
+        <h2 class="de">
+            Điểm Chuẩn & Điều Kiện Xét Tuyển
+        </h2>
+        <div class="containers">
+            <img class="images" src="./hinh/cntt2.webp" alt="Ngành CNTT">
+            <div class="texts">
+                <div class="section">
+                    <h2>1. Xét tuyển theo kết quả thi tốt nghiệp THPT năm 2025</h2>
+                    <ul>
+                        <li>Sử dụng điểm thi tốt nghiệp THPT 2025 để xét tuyển.</li>
+                        <li>Có thể kết hợp với chứng chỉ tiếng Anh quốc tế quy đổi.</li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>2. Xét tuyển theo chứng chỉ quốc tế</h2>
+                    <ul>
+                        <li>Sử dụng các chứng chỉ SAT, A-Level, ACT.</li>
+                        <li>Yêu cầu điểm tối thiểu:
+                            <ul>
+                                <li><strong>SAT:</strong> từ 1100/1600 điểm.</li>
+                                <li><strong>A-Level:</strong> từ 60/100 điểm mỗi môn.</li>
+                                <li><strong>ACT:</strong> từ 22/36 điểm.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>3. Xét tuyển theo kết quả thi Đánh giá năng lực do ĐHQG tổ chức</h2>
+                    <ul>
+                        <li>Sử dụng điểm thi HSA 2025.</li>
+                        <li>Yêu cầu điểm tối thiểu: <strong>80/150 điểm</strong>.</li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>4. Xét tuyển thẳng và ưu tiên xét tuyển</h2>
+                    <ul>
+                        <li>Áp dụng cho học sinh giỏi quốc gia, quốc tế, cấp tỉnh/thành phố.</li>
+                        <li>Theo quy định của Bộ GD&ĐT và quy định riêng của ĐH.</li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>5. Xét tuyển kết hợp</h2>
+                    <ul>
+                        <li>Kết hợp điểm thi tốt nghiệp THPT với chứng chỉ tiếng Anh quốc tế.</li>
+                        <li>Yêu cầu điểm tối thiểu chứng chỉ tiếng Anh:
+                            <ul>
+                                <li><strong>IELTS:</strong> từ 5.5.</li>
+                                <li><strong>TOEFL iBT:</strong> từ 72.</li>
+                                <li><strong>VSTEP:</strong> từ B2.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="section">
+                    <h2>Ghi chú:</h2>
+                    <ul>
+                        <li><strong>SAT, A-Level, ACT:</strong> Các kỳ thi chuẩn hóa quốc tế.</li>
+                        <li><strong>IELTS, TOEFL iBT:</strong> Chứng chỉ tiếng Anh quốc tế.</li>
+                        <li><strong>VSTEP:</strong> Chứng chỉ tiếng Anh trong nước do Bộ GD&ĐT cấp.</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Lưu ý:</h2>
+                    <ul>
+                        <li>Thí sinh có thể đăng ký xét tuyển theo nhiều phương thức khác nhau.</li>
+                        <li>Chứng chỉ ngoại ngữ quốc tế phải có ngày thi trước 30/5/2025.</li>
+                        <li>Thí sinh cần theo dõi website chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất về tuyển sinh.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sections">
+        <h2 class="de">Lời Khuyên & Các Kỹ Năng Cần Có Để Theo Ngành CNTT</h2>
+        <div class="containerss">
+            <div class="texts">
+                <strong>Các Kỹ Năng Quan Trọng Để Phát Triển</strong>
+                <p>Kỹ năng lập trình:</p>
+                <ul class="list-inside">
+                    <li>Thành thạo các ngôn ngữ lập trình như Python, Java, C++, JavaScript, v.v.</li>
+                    <li>Hiểu biết về cấu trúc dữ liệu và giải thuật.</li>
+                </ul>
+                <p>Kỹ năng phân tích và giải quyết vấn đề:</p>
+                <ul class="list-inside">
+                    <li>Khả năng phân tích yêu cầu và tìm ra giải pháp hiệu quả.</li>
+                    <li>Tư duy logic và sáng tạo.</li>
+                </ul>
+                <p>Kỹ năng làm việc nhóm:</p>
+                <ul class="list-inside">
+                    <li>Hợp tác với các thành viên trong nhóm để phát triển dự án.</li>
+                    <li>Sử dụng các công cụ quản lý dự án như Git.</li>
+                </ul>
+                <p>Kỹ năng tự học:</p>
+                <ul class="list-inside">
+                    <li>Theo kịp các xu hướng công nghệ mới.</li>
+                    <li>Sẵn sàng học hỏi và nâng cao kiến thức liên tục.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="sections">
+        <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu Của Ngành Này</h2>
+        <h3 class="region-title">Miền Bắc</h3>
+        <div class="grid-container">
+            <div class="university-card">
+                <img src="./hinh/hustHN.jpg" alt="Đại học Bách Khoa Hà Nội">
+                <div class="info">
+                    <strong>Đại học Bách Khoa Hà Nội</strong>
+                    <p>Trường đào tạo CNTT hàng đầu với chương trình chuẩn quốc tế.</p>
+                    <a href="https://www.hust.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/congngheHN.jpg" alt="Đại học Công nghệ - ĐHQG Hà Nội">
+                <div class="info">
+                    <strong>Đại học Công nghệ - ĐHQG Hà Nội</strong>
+                    <p>Đào tạo chuyên sâu về Khoa học Máy tính, AI, và An toàn thông tin.</p>
+                    <a href="https://uet.vnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/ptit.jpg" alt="Học viện Công nghệ Bưu chính Viễn thông">
+                <div class="info">
+                    <strong>Học viện Công nghệ Bưu chính Viễn thông</strong>
+                    <p>Chuyên về Viễn thông và CNTT, hợp tác với nhiều doanh nghiệp lớn.</p>
+                    <a href="https://ptit.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/mta.jpg" alt="Học viện Kỹ thuật Quân sự">
+                <div class="info">
+                    <strong>Học viện Kỹ thuật Quân sự</strong>
+                    <p>Đào tạo kỹ sư CNTT theo hướng nghiên cứu và ứng dụng quân sự.</p>
+                    <a href="https://mta.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/haiu.jpg" alt="Đại học Công nghiệp Hà Nội">
+                <div class="info">
+                    <strong>Đại học Công nghiệp Hà Nội</strong>
+                    <p>Chương trình CNTT thực tiễn và hợp tác doanh nghiệp.</p>
+                    <a href="https://www.haui.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/hmu.jpg" alt="Đại học Mở Hà Nội">
+                <div class="info">
+                    <strong>Đại học Mở Hà Nội</strong>
+                    <p>Chương trình đào tạo CNTT linh hoạt, phù hợp với xu hướng công nghệ.</p>
+                    <a href="https://hou.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="region-title">Miền Trung</h3>
+        <div class="grid-container">
+            <div class="university-card">
+                <img src="./hinh/dut.jpg" alt="Đại học Bách Khoa - ĐH Đà Nẵng">
+                <div class="info">
+                    <strong>Đại học Bách Khoa - ĐH Đà Nẵng</strong>
+                    <p>Trường đào tạo CNTT hàng đầu khu vực miền Trung.</p>
+                    <a href="https://dut.udn.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/huein.jpg" alt="Đại học Khoa học - ĐH Huế">
+                <div class="info">
+                    <strong>Đại học Khoa học - ĐH Huế</strong>
+                    <p>Đào tạo CNTT với định hướng nghiên cứu và ứng dụng thực tế.</p>
+                    <a href="https://husc.hueuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/dntu.jpg" alt="Đại học Duy Tân">
+                <div class="info">
+                    <strong>Đại học Duy Tân</strong>
+                    <p>Chương trình CNTT chuẩn quốc tế, có hợp tác với Mỹ.</p>
+                    <a href="https://duytan.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/udn.jpg" alt="Đại học Sư phạm Kỹ thuật Đà Nẵng">
+                <div class="info">
+                    <strong>Đại học Sư phạm Kỹ thuật Đà Nẵng</strong>
+                    <p>Chương trình CNTT chú trọng thực hành và ứng dụng thực tế.</p>
+                    <a href="https://ute.udn.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/qnu.jpg" alt="Đại học Quy Nhơn">
+                <div class="info">
+                    <strong>Đại học Quy Nhơn</strong>
+                    <p>Chuyên ngành CNTT với định hướng phát triển ứng dụng.</p>
+                    <a href="https://www.qnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <h3 class="region-title">Miền Nam</h3>
+        <div class="grid-container">
+            <div class="university-card">
+                <img src="./hinh/hustHCM.jpg" alt="Đại học Bách Khoa TP.HCM">
+                <div class="info">
+                    <strong>Đại học Bách Khoa TP.HCM</strong>
+                    <p>Chương trình CNTT chuẩn quốc tế, liên kết với nhiều tập đoàn công nghệ.</p>
+                    <a href="https://www.hcmut.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/vnuhcm.webp" alt="Đại học Quốc tế - ĐHQG TP.HCM">
+                <div class="info">
+                    <strong>Đại học Quốc tế - ĐHQG TP.HCM</strong>
+                    <p>Đào tạo CNTT bằng tiếng Anh, có liên kết đào tạo với nước ngoài.</p>
+                    <a href="https://hcmiu.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/hutech.png" alt="Đại học Công nghệ TP.HCM">
+                <div class="info">
+                    <strong>Đại học Công nghệ TP.HCM</strong>
+                    <p>Trường đào tạo CNTT thực tiễn, hợp tác với nhiều doanh nghiệp.</p>
+                    <a href="https://www.hutech.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="university-card">
+                <img src="./hinh/fpt.jpg" alt="Đại học FPT">
+                <div class="info">
+                    <strong>Đại học FPT</strong>
+                    <p>Trường đào tạo CNTT theo chuẩn doanh nghiệp, chú trọng thực tiễn.</p>
+                    <a href="https://fpt.edu.vn/" target="_blank">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- </main> -->
+</body>
+
+</html>

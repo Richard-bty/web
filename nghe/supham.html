@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành Sư Phạm
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Ngành Sư Phạm</h1>
+        <section class="sections">
+            <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+            <div class="containers">
+                <div class="texts">
+                    <h1>Ngành này là gì? Học gì?</h1>
+                    <p>Ngành Sư Phạm là ngành học chuyên đào tạo giáo viên và các chuyên gia trong lĩnh vực giáo dục. Ngành này trang bị cho sinh viên những kiến thức cơ bản về tâm lý học, phương pháp giảng dạy, và kỹ năng quản lý lớp học. Sinh viên ngành Sư Phạm có thể học về các lĩnh vực như giáo dục mầm non, giáo dục tiểu học, giáo dục trung học, và giáo dục đặc biệt.</p>
+    
+                    <h1>Ngành này học về:</h1>
+                    <ul>
+                        <li>Phương pháp giảng dạy và truyền đạt kiến thức.</li>
+                        <li>Quản lý lớp học và phát triển kỹ năng giao tiếp.</li>
+                        <li>Giáo dục tâm lý và phát triển học sinh.</li>
+                        <li>Kỹ năng sáng tạo trong giảng dạy và ứng dụng công nghệ trong giáo dục.</li>
+                    </ul>
+    
+                    <h1>Mức lương trung bình</h1>
+                    <ul>
+                        <li>Giáo viên mầm non: Lương từ 7-12 triệu đồng/tháng.</li>
+                        <li>Giáo viên tiểu học: Lương từ 10-15 triệu đồng/tháng.</li>
+                        <li>Giáo viên trung học phổ thông: Lương từ 15-20 triệu đồng/tháng.</li>
+                        <li>Giáo viên giảng dạy tại các trường đại học: Lương từ 20 triệu đồng/tháng trở lên.</li>
+                    </ul>
+                    <p>Ngành Sư Phạm cung cấp nhiều cơ hội nghề nghiệp trong lĩnh vực giáo dục và đào tạo. Đây là ngành học phù hợp cho những ai yêu thích công việc giảng dạy, phát triển học sinh, và đóng góp vào sự nghiệp giáo dục của đất nước.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="sections">
+            <h2 class="de">Điểm Chuẩn & Điều Kiện Xét Tuyển</h2>
+            <div class="containers">
+                <div class="texts">
+                    <div class="section">
+                        <h2>1. Xét tuyển thẳng và ưu tiên xét tuyển</h2>
+                        <p>Áp dụng cho tất cả các ngành, chương trình đào tạo. Gồm 2 diện:</p>
+                        <ul>
+                            <li><strong>Xét tuyển thẳng (XTT1):</strong> Theo quy chế của Bộ GD&ĐT.</li>
+                            <li><strong>Ưu tiên xét tuyển (XTT2):</strong> Theo quy định riêng của trường.</li>
+                        </ul>
+                        <h3>Điều kiện XTT2:</h3>
+                        <ul>
+                            <li>Tốt nghiệp THPT năm 2025.</li>
+                            <li>Hạnh kiểm 6 học kỳ THPT đạt loại Tốt.</li>
+                            <li>Học lực 3 năm THPT đạt loại Tốt (Giỏi).</li>
+                            <li>Đạt một trong các tiêu chí về thành tích học tập, thi đấu do trường quy định.</li>
+                        </ul>
+                        <p><strong>Lưu ý:</strong> Thí sinh chỉ được đăng ký 1 nguyện vọng xét tuyển theo phương thức này.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>2. Xét tuyển dựa trên kết quả học tập THPT (học bạ)</h2>
+                        <p>Áp dụng cho tất cả các ngành, chương trình đào tạo. Xét điểm trung bình các môn học trong tổ hợp xét tuyển.</p>
+                        <p><strong>Lưu ý:</strong> Điều kiện cụ thể sẽ được trường thông báo sau.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>3. Xét tuyển dựa trên điểm thi tốt nghiệp THPT 2025</h2>
+                        <p>Áp dụng cho tất cả các ngành, chương trình đào tạo. Xét điểm tổ hợp 3 môn thi tốt nghiệp THPT.</p>
+                        <p><strong>Đối với ngành năng khiếu:</strong> Kết hợp điểm thi THPT và điểm thi năng khiếu do trường tổ chức.</p>
+                        <p>Thí sinh được đăng ký nhiều nguyện vọng.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>4. Xét tuyển dựa trên kết quả thi đánh giá năng lực</h2>
+                        <p>Áp dụng cho 45/50 ngành (trừ các ngành năng khiếu). Sử dụng kết quả các kỳ thi đánh giá năng lực của:</p>
+                        <ul>
+                            <li>Đại học Quốc gia Hà Nội.</li>
+                            <li>Đại học Quốc gia TP.HCM.</li>
+                            <li>Trường ĐH Sư phạm Hà Nội.</li>
+                            <li>Trường ĐH Sư phạm TP.HCM.</li>
+                        </ul>
+                        <p>Thí sinh được đăng ký tối đa 2 nguyện vọng.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>5. Xét tuyển dựa trên kết quả kỳ thi riêng</h2>
+                        <p>Gồm 8 môn thi:</p>
+                        <ul>
+                            <li>Ngữ văn</li>
+                            <li>Toán</li>
+                            <li>Tiếng Anh</li>
+                            <li>Lịch sử</li>
+                            <li>Vật lý</li>
+                            <li>Hóa học</li>
+                            <li>Sinh học</li>
+                            <li>Địa lý</li>
+                        </ul>
+                        <p><strong>Hình thức thi:</strong></p>
+                        <ul>
+                            <li><strong>Ngữ văn:</strong> Trắc nghiệm kết hợp tự luận (90 phút).</li>
+                            <li><strong>Các môn còn lại:</strong> Trắc nghiệm (60 phút).</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>6. Xét tuyển các ngành năng khiếu</h2>
+                        <p>Áp dụng cho các ngành: Giáo dục Mầm non, Giáo dục Thể chất, Quản lý thể dục thể thao.</p>
+                        <p>Kết hợp các phương thức trên với điểm thi năng khiếu. Không sử dụng kết quả thi năng khiếu của trường khác.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Thuật ngữ giải thích:</h2>
+                        <ul>
+                            <li><strong>XTT:</strong> Xét tuyển thẳng.</li>
+                            <li><strong>GDMN:</strong> Giáo dục Mầm non.</li>
+                            <li><strong>GDTC:</strong> Giáo dục Thể chất.</li>
+                            <li><strong>SPAN:</strong> Sư phạm Âm nhạc.</li>
+                            <li><strong>SPMT:</strong> Sư phạm Mỹ thuật.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>Lưu ý:</h2>
+                        <ul>
+                            <li>Thí sinh có thể đăng ký xét tuyển theo nhiều phương thức khác nhau.</li>
+                            <li>Nếu xét tuyển ngành năng khiếu, coi lịch thi trường ĐH.</li>
+                            <li>Thí sinh cần theo dõi thông báo chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu</h2>
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/spHN.jpg" alt="Đại học Sư phạm Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Hà Nội</strong>
+                        <p>Trường đào tạo giáo viên hàng đầu với chương trình chuẩn quốc gia.</p>
+                        <a href="https://hnue.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/sp2.jpg" alt="Đại học Sư phạm 2">
+                    <div class="info">
+                        <strong>Đại học Sư phạm 2</strong>
+                        <p>Đào tạo giáo viên chất lượng cao, đặc biệt ở khu vực phía Bắc.</p>
+                        <a href="https://sp2.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/tnu.jpg" alt="Đại học Sư phạm - Đại học Thái Nguyên">
+                    <div class="info">
+                        <strong>Đại học Sư phạm - Đại học Thái Nguyên</strong>
+                        <p>Trường đào tạo giáo viên uy tín tại khu vực miền núi phía Bắc.</p>
+                        <a href="https://tnue.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dhsphn.jpg" alt="Đại học Giáo dục - ĐHQG Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Giáo dục - ĐHQG Hà Nội</strong>
+                        <p>Chuyên đào tạo giáo viên và nghiên cứu giáo dục hiện đại.</p>
+                        <a href="https://education.vnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dhsptw.jpg" alt="Đại học Sư phạm Nghệ thuật Trung ương">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Nghệ thuật Trung ương</strong>
+                        <p>Đào tạo giáo viên chuyên ngành nghệ thuật và sư phạm.</p>
+                        <a href="https://spnttw.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dhsptw.jpg" alt="Đại học Sư phạm - ĐH Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Sư phạm - ĐH Đà Nẵng</strong>
+                        <p>Trường đào tạo giáo viên uy tín tại khu vực miền Trung.</p>
+                        <a href="https://ued.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/hueuni.jpg" alt="Đại học Sư phạm - ĐH Huế">
+                    <div class="info">
+                        <strong>Đại học Sư phạm - ĐH Huế</strong>
+                        <p>Đào tạo giáo viên chất lượng cao, định hướng nghiên cứu và ứng dụng.</p>
+                        <a href="https://hueuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/qnu.jpg" alt="Đại học Quy Nhơn">
+                    <div class="info">
+                        <strong>Đại học Quy Nhơn</strong>
+                        <p>Trường đào tạo giáo viên và chuyên gia giáo dục tại khu vực miền Trung.</p>
+                        <a href="https://www.qnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dhsptntw.jpg" alt="Đại học Sư phạm Nghệ thuật Trung ương - Cơ sở Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Nghệ thuật Trung ương - Cơ sở Đà Nẵng</strong>
+                        <p>Đào tạo giáo viên chuyên ngành nghệ thuật tại miền Trung.</p>
+                        <a href="https://spnttw.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/phanthiet.jpg" alt="Đại học Phan Thiết">
+                    <div class="info">
+                        <strong>Đại học Phan Thiết</strong>
+                        <p>Đào tạo giáo viên và các chuyên gia giáo dục tại khu vực Nam Trung Bộ.</p>
+                        <a href="https://upt.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dhsptphcm.jpg" alt="Đại học Sư phạm TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Sư phạm TP.HCM</strong>
+                        <p>Trường đào tạo giáo viên hàng đầu tại khu vực miền Nam.</p>
+                        <a href="https://hcmue.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dhsptdhcm.jpg" alt="Đại học Sư phạm Kỹ thuật TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật TP.HCM</strong>
+                        <p>Đào tạo giáo viên kỹ thuật và các ngành sư phạm công nghệ.</p>
+                        <a href="https://hcmute.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dhsptct.jpg" alt="Đại học Cần Thơ">
+                    <div class="info">
+                        <strong>Đại học Cần Thơ</strong>
+                        <p>Trường đào tạo giáo viên uy tín tại khu vực Đồng bằng sông Cửu Long.</p>
+                        <a href="https://ctu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dhsptvl.jpg" alt="Đại học Vĩnh Long">
+                    <div class="info">
+                        <strong>Đại học Vĩnh Long</strong>
+                        <p>Đào tạo giáo viên và các chuyên gia giáo dục tại khu vực miền Tây.</p>
+                        <a href="https://vlu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dhsptan.jpg" alt="Đại học An Giang">
+                    <div class="info">
+                        <strong>Đại học An Giang</strong>
+                        <p>Trường đào tạo giáo viên chất lượng cao tại khu vực miền Tây Nam Bộ.</p>
+                        <a href="https://www.agu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

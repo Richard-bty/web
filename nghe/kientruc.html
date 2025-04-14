@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành kiến trúc và xây dựng
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Ngành Kiến trúc và Xây dựng</h1>
+        <section class="sections">
+            <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+            <div class="containers">
+                <!-- <img class="images" src="./hinh/ktxd1.webp" alt="Ngành Kiến trúc và Xây dựng"> -->
+                <div class="texts">
+                    <h1>Ngành này là gì? Học gì?</h1>
+                    <p>Ngành Kiến trúc và Xây dựng tập trung vào việc thiết kế, thi công và quản lý các công trình xây dựng, bao gồm cả kiến trúc và kỹ thuật xây dựng. Ngành này kết hợp giữa yếu tố sáng tạo trong thiết kế và kỹ thuật trong thi công, nhằm tạo ra những công trình đáp ứng nhu cầu về thẩm mỹ và chức năng.</p>
+                    <p>Ngành này học về:</p>
+            <ul>
+                <li>Thiết kế kiến trúc và quy hoạch đô thị</li>
+                <li>Vật liệu xây dựng và công nghệ xây dựng</li>
+                <li>Quản lý dự án và kỹ thuật xây dựng</li>
+                <li>Kỹ thuật cấu trúc và cơ điện</li>
+                <li>Pháp luật và quy định về xây dựng</li>
+                <li>Quản lý và bảo trì công trình xây dựng</li>
+            </ul>
+        
+                    <h1>Mức lương trung bình</h1>
+                    <ul>
+                        <li>Mới vào nghề: Lương cơ bản thường dao động từ khoảng 6-8 triệu đồng/tháng.</li>
+                        <li>Cán bộ có thâm niên: Lương có thể lên tới 10-15 triệu đồng/tháng, tùy vào thâm niên và vị trí công tác.</li>
+                        <li>Cấp quản lý và chuyên gia: Mức lương có thể dao động từ 15-25 triệu đồng/tháng, tùy vào cấp bậc và trách nhiệm.</li>
+                    </ul>
+                    <p>Các công ty xây dựng lớn, tập đoàn bất động sản và các dự án quy mô thường có mức lương và đãi ngộ cao hơn.</p>
+                    <p>Ngoài lương cơ bản, các kỹ sư và chuyên gia trong ngành còn nhận được các khoản phụ cấp và thưởng theo hiệu quả công việc.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sections">
+            <h2 class="de">Điểm Chuẩn & Điều Kiện Xét Tuyển</h2>
+            <div class="containers">
+                <!-- <img class="images" src="./hinh/ktxd2.webp" alt="Ngành Kiến trúc và Xây dựng"> -->
+                <div class="texts">
+                    <div class="section">
+                        <h2>1. Xét tuyển sử dụng kết quả thi tốt nghiệp THPT năm 2025</h2>
+                        <p><strong>Điều kiện:</strong></p>
+                        <ul>
+                            <li>Áp dụng cho tất cả các ngành/chuyên ngành không có môn thi năng khiếu.</li>
+                            <li>Điểm xét tuyển = Tổng điểm 3 môn trong tổ hợp xét tuyển + Điểm ưu tiên (nếu có).</li>
+                            <li>Thí sinh cần đạt ngưỡng đảm bảo chất lượng đầu vào do trường quy định.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>2. Xét tuyển kết hợp kết quả thi tốt nghiệp THPT với điểm thi năng khiếu năm 2025</h2>
+                        <p><strong>Điều kiện:</strong></p>
+                        <ul>
+                            <li>Áp dụng cho các ngành năng khiếu có tổ hợp xét tuyển V00, V01, V02, H00, H02.</li>
+                            <li>Kết hợp điểm thi THPT và điểm thi năng khiếu do trường tổ chức.</li>
+                            <li>Thí sinh phải tham dự kỳ thi năng khiếu do ĐH tổ chức năm 2025.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>3. Xét tuyển sử dụng kết quả học tập cấp THPT (học bạ)</h2>
+                        <p><strong>Điều kiện:</strong></p>
+                        <ul>
+                            <li>Xét điểm học bạ 6 học kỳ THPT của các môn trong tổ hợp xét tuyển.</li>
+                            <li>Áp dụng cho một số ngành cụ thể như Kỹ thuật cấp thoát nước, Xây dựng dân dụng và công nghiệp...</li>
+                            <li>Dành cho cả thí sinh tốt nghiệp THPT năm 2025 và trước đó.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>4. Xét tuyển thẳng và Ưu tiên xét tuyển</h2>
+                        <h3>a) Xét tuyển thẳng:</h3>
+                        <ul>
+                            <li>Theo quy định của Bộ GD&ĐT.</li>
+                            <li>Áp dụng cho tất cả ngành không có môn thi năng khiếu.</li>
+                            <li>Ngành có môn năng khiếu: Thí sinh phải đạt điểm sàn năng khiếu.</li>
+                        </ul>
+                        <h3>b) Ưu tiên xét tuyển:</h3>
+                        <ul>
+                            <li>Cộng điểm ưu tiên cho thí sinh thuộc diện tuyển thẳng nhưng không dùng quyền đó.</li>
+                            <li>Cộng điểm cho thí sinh đạt giải học sinh giỏi cấp tỉnh (trong 3 năm gần nhất).</li>
+                            <li>Cộng điểm cho thí sinh có IELTS từ 6.0 đăng ký xét tuyển Chương trình tiên tiến ngành Kiến trúc.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>Lưu ý:</h2>
+                        <ul>
+                            <li>Thí sinh có thể đăng ký xét tuyển theo nhiều phương thức khác nhau.</li>
+                            <li>Chứng chỉ ngoại ngữ quốc tế phải có ngày thi trước 30/5/2025.</li>
+                            <li>Thí sinh cần theo dõi website chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất về tuyển sinh.</li>
+                            <li>Đối với ngành năng khiếu, coi lịch thi trường ĐH.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu</h2>
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/nuce.jpg" alt="Đại học Xây dựng Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Xây dựng Hà Nội</strong>
+                        <p>Trường đào tạo hàng đầu về Kiến trúc và Xây dựng tại miền Bắc.</p>
+                        <a href="https://nuce.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/archvietnam.jpg" alt="Đại học Kiến trúc Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Kiến trúc Hà Nội</strong>
+                        <p>Chuyên sâu về Kiến trúc, Quy hoạch đô thị và Thiết kế nội thất.</p>
+                        <a href="https://hau.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/mta.jpg" alt="Học viện Kỹ thuật Quân sự">
+                    <div class="info">
+                        <strong>Học viện Kỹ thuật Quân sự</strong>
+                        <p>Đào tạo kỹ sư Kiến trúc với định hướng ứng dụng trong quân sự.</p>
+                        <a href="https://mta.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/vnu.jpg" alt="Đại học Quốc gia Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Quốc gia Hà Nội</strong>
+                        <p>Đào tạo ngành Kiến trúc với định hướng nghiên cứu và ứng dụng.</p>
+                        <a href="https://vnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/thuongmai.jpg" alt="Đại học Thương mại">
+                    <div class="info">
+                        <strong>Đại học Thương mại</strong>
+                        <p>Đào tạo ngành Kiến trúc với sự kết hợp giữa kinh tế và thiết kế.</p>
+                        <a href="https://tmu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/phenikaa.jpg" alt="Đại học Phenikaa">
+                    <div class="info">
+                        <strong>Đại học Phenikaa</strong>
+                        <p>Chương trình đào tạo Kiến trúc hiện đại, chú trọng thực hành.</p>
+                        <a href="https://phenikaa-uni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dut.jpg" alt="Đại học Bách Khoa - ĐH Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa - ĐH Đà Nẵng</strong>
+                        <p>Trường đào tạo ngành Kiến trúc và Xây dựng hàng đầu khu vực miền Trung.</p>
+                        <a href="https://dut.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/huearch.jpg" alt="Đại học Nghệ thuật - ĐH Huế">
+                    <div class="info">
+                        <strong>Đại học Nghệ thuật - ĐH Huế</strong>
+                        <p>Đào tạo ngành Kiến trúc với định hướng sáng tạo và thực hành.</p>
+                        <a href="https://hueuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dtu.jpg" alt="Đại học Duy Tân">
+                    <div class="info">
+                        <strong>Đại học Duy Tân</strong>
+                        <p>Chương trình Kiến trúc hiện đại, hợp tác quốc tế với các trường danh tiếng.</p>
+                        <a href="https://duytan.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/udn.jpg" alt="Đại học Sư phạm Kỹ thuật Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật Đà Nẵng</strong>
+                        <p>Đào tạo ngành Kiến trúc với trọng tâm vào ứng dụng thực tế.</p>
+                        <a href="https://ute.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/qnu.jpg" alt="Đại học Quy Nhơn">
+                    <div class="info">
+                        <strong>Đại học Quy Nhơn</strong>
+                        <p>Chuyên ngành Kiến trúc với định hướng phát triển bền vững.</p>
+                        <a href="https://www.qnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hcmut.jpg" alt="Đại học Bách Khoa TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa TP.HCM</strong>
+                        <p>Trường đào tạo ngành Kiến trúc và Xây dựng hàng đầu tại miền Nam.</p>
+                        <a href="https://www.hcmut.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/archhcm.jpg" alt="Đại học Kiến trúc TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Kiến trúc TP.HCM</strong>
+                        <p>Chuyên sâu về Kiến trúc, Quy hoạch đô thị và Thiết kế nội thất.</p>
+                        <a href="https://www.uah.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/vlute.jpg" alt="Đại học Sư phạm Kỹ thuật Vĩnh Long">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật Vĩnh Long</strong>
+                        <p>Đào tạo ngành Kiến trúc với trọng tâm vào ứng dụng thực tế.</p>
+                        <a href="https://vlute.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/cantho.jpg" alt="Đại học Cần Thơ">
+                    <div class="info">
+                        <strong>Đại học Cần Thơ</strong>
+                        <p>Đào tạo ngành Kiến trúc với định hướng phát triển bền vững.</p>
+                        <a href="https://www.ctu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

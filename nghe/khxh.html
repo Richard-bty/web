@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành khoa học xã hội
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Ngành Khoa Học Xã Hội</h1>
+        <section class="sections">
+            <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+            <div class="containers">
+                <div class="texts">
+                    <h1>Ngành này là gì? Học gì?</h1>
+                    <p>Ngành Khoa học xã hội bao gồm các nghiên cứu về con người, xã hội và các mối quan hệ xã hội. Đây là ngành học tập trung vào việc tìm hiểu những vấn đề xã hội, hành vi của con người trong xã hội và cách thức tổ chức các mối quan hệ xã hội.</p>
+                    <p>Ngành này học về:</p>
+                    <ul>
+                        <li>Những lý thuyết xã hội và nhân văn</li>
+                        <li>Những nghiên cứu về văn hóa, chính trị, tâm lý, và kinh tế</li>
+                        <li>Phương pháp nghiên cứu xã hội, phân tích dữ liệu và điều tra xã hội</li>
+                        <li>Các vấn đề xã hội toàn cầu như nghèo đói, bất bình đẳng, xung đột và hòa bình</li>
+                    </ul>
+    
+                    <h1>Mức lương trung bình</h1>
+                    <ul>
+                        <li>Cử nhân Khoa học Xã hội mới ra trường: Lương có thể dao động từ 6-10 triệu đồng/tháng.</li>
+                        <li>Giảng viên, nhà nghiên cứu: Lương có thể dao động từ 10-15 triệu đồng/tháng, tùy vào công việc và cấp bậc.</li>
+                        <li>Các chuyên gia nghiên cứu và tư vấn trong các tổ chức xã hội, chính phủ, hoặc NGO có thể kiếm được từ 15-25 triệu đồng/tháng.</li>
+                    </ul>
+                    <p>Các cơ quan quốc tế, các tổ chức phi chính phủ và các công ty nghiên cứu xã hội thường có mức lương cao hơn cho các chuyên gia có kinh nghiệm.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sections">
+            <h2 class="de">
+                Điểm Chuẩn & Điều Kiện Xét Tuyển
+            </h2>
+            <div class="containers">
+                <div class="texts">
+                    <div class="section">
+                        <h2>1. Xét tuyển thẳng và ưu tiên xét tuyển</h2>
+                        <p><strong>Áp dụng cho các thí sinh:</strong></p>
+                        <ul>
+                            <li>Đạt giải trong các kỳ thi học sinh giỏi quốc gia, quốc tế.</li>
+                            <li>Đạt giải nhất, nhì, ba trong các kỳ thi Olympic bậc THPT do tổ chức.</li>
+                            <li>Học sinh các trường THPT chuyên đạt học lực giỏi 3 năm THPT.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>2. Xét tuyển dựa trên kết quả kỳ thi đánh giá năng lực do ĐH tổ chức</h2>
+                        <p><strong>Điều kiện:</strong></p>
+                        <ul>
+                            <li>Chiếm tối thiểu 30% tổng chỉ tiêu.</li>
+                            <li>Thí sinh tham dự kỳ thi đánh giá năng lực do Đại học tổ chức.</li>
+                        </ul>
+                        <p><strong>Tiêu chí xét tuyển:</strong> Điểm xét tuyển = Điểm bài thi đánh giá năng lực.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>3. Xét tuyển dựa trên kết quả kỳ thi tốt nghiệp THPT</h2>
+                        <p><strong>Điều kiện:</strong></p>
+                        <ul>
+                            <li>Chiếm tối thiểu 50% tổng chỉ tiêu.</li>
+                            <li>Sử dụng kết quả 3 môn thi tốt nghiệp THPT theo tổ hợp xét tuyển.</li>
+                        </ul>
+                        <p><strong>Tiêu chí xét tuyển:</strong> Điểm xét tuyển = Tổng điểm 3 môn thi + Điểm ưu tiên (nếu có).</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>Lưu ý:</h2>
+                        <p class="note">Thí sinh cần theo dõi thông báo chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất về tuyển sinh năm 2025.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu</h2>
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hustHN.jpg" alt="Đại học Bách Khoa Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa Hà Nội</strong>
+                        <p>Trường đào tạo khxh hàng đầu với chương trình chuẩn quốc tế.</p>
+                        <a href="https://www.hust.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/hust.jpg" alt="Đại học Quốc gia Hà Nội (VNU)">
+                    <div class="info">
+                        <strong>Đại học Quốc gia Hà Nội (VNU)</strong>
+                        <p>Trường có nhiều chuyên ngành khxh đa dạng và chất lượng.</p>
+                        <a href="https://www.vnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./hinh/hnue.jpg" alt="Đại học Sư phạm Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Hà Nội</strong>
+                        <p>Chương trình đào tạo khxh chất lượng cao, chú trọng nghiên cứu.</p>
+                        <a href="https://www.hnue.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./hinh/ueh.jpg" alt="Đại học Kinh tế Quốc dân">
+                    <div class="info">
+                        <strong>Đại học Kinh tế Quốc dân</strong>
+                        <p>Trường đào tạo khxh với nhiều chuyên ngành đa dạng.</p>
+                        <a href="https://www.neu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./hinh/ueh.jpg" alt="Đại học Thương mại">
+                    <div class="info">
+                        <strong>Đại học Thương mại</strong>
+                        <p>Chương trình đào tạo khxh chất lượng cao, chú trọng thực hành.</p>
+                        <a href="https://www.tmu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./hinh/ueh.jpg" alt="Đại học Ngoại thương">
+                    <div class="info">
+                        <strong>Đại học Ngoại thương</strong>
+                        <p>Trường đào tạo khxh với chương trình chuẩn quốc tế.</p>
+                        <a href="https://www.ftu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dhspdn.jpg" alt="Đại học Sư phạm Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Đà Nẵng</strong>
+                        <p>Trường đại học công lập với chương trình đào tạo khxh chất lượng cao.</p>
+                        <a href="https://www.dnpu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./hinh/dhktdn.jpg" alt="Đại học Kinh tế Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Kinh tế Đà Nẵng</strong>
+                        <p>Trường đại học công lập đào tạo khxh với nhiều chuyên ngành đa dạng.</p>
+                        <a href="https://www.due.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./hinh/dhktdn.jpg" alt="Đại học Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Đà Nẵng</strong>
+                        <p>Hệ thống đại học công lập với chương trình đào tạo khxh chất lượng cao.</p>
+                        <a href="https://www.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./hinh/dhktdn.jpg" alt="Đại học Đà Lạt">
+                    <div class="info">
+                        <strong>Đại học Đà Lạt</strong>
+                        <p>Trường đại học công lập với chương trình đào tạo khxh chuẩn quốc tế.</p>
+                        <a href="https://www.dlu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./hinh/dhktdn.jpg" alt="Đại học Huế">
+                    <div class="info">
+                        <strong>Đại học Huế</strong>
+                        <p>Hệ thống đại học công lập với chương trình đào tạo khxh chú trọng nghiên cứu.</p>
+                        <a href="https://www.hueuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hcmut.jpg" alt="Đại học Bách Khoa TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa TP.HCM</strong>
+                        <p>Trường đào tạo khxh với chương trình chuẩn quốc tế, liên kết với nhiều tổ chức quốc tế.</p>
+                        <a href="https://www.hcmut.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card"></div>
+                    <img src="./hinh/vnuhcm.jpg" alt="Đại học Quốc gia TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Quốc gia TP.HCM</strong>
+                        <p>Hệ thống đại học hàng đầu miền Nam với nhiều chuyên ngành khxh đa dạng.</p>
+                        <a href="https://vnuhcm.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/ueh.jpg" alt="Đại học Kinh tế TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Kinh tế TP.HCM</strong>
+                        <p>Trường đào tạo khxh với chương trình chất lượng cao, chú trọng thực hành.</p>
+                        <a href="https://www.ueh.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/ussh.jpg" alt="Đại học Khoa học Xã hội và Nhân văn TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Khoa học Xã hội và Nhân văn TP.HCM</strong>
+                        <p>Trường chuyên đào tạo khxh với nhiều ngành học phong phú và chất lượng.</p>
+                        <a href="https://hcmussh.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/tlu.jpg" alt="Đại học Tôn Đức Thắng">
+                    <div class="info">
+                        <strong>Đại học Tôn Đức Thắng</strong>
+                        <p>Trường đại học hiện đại với chương trình đào tạo khxh đạt chuẩn quốc tế.</p>
+                        <a href="https://www.tdtu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div></div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

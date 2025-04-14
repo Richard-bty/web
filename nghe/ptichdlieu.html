@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ngành Công Nghệ Thông Tin
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./hinh.jpg">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/cntt.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+   <header class="header">
+        <div class="content">
+            <div class="header-top">
+                <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                <nav class="nav">
+                    <ul class="header-right" id="navbar_list-PC">
+                        <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+                        <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                        <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+                        <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu_header">
+            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <label for="checkbox">
+                <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+
+            <!-- lop phu -->
+             <label for="checkbox" class="overlay"></label>
+            <!-- phan menu -->
+            <div class="menu_drawer">
+                <div class="menu_drawer-top">
+                    <label for="checkbox"  >
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list-mobile"></ul>
+                <script>
+                    const navPC = document.querySelector("#navbar_list-PC");
+                    const navmobile = document.querySelector("#navbar_list-mobile");
+
+                    navmobile.innerHTML = navPC.innerHTML;
+                </script>
+            </div>
+         </div>
+    </header>
+    <!-- <main class="main-content"> -->
+        <h1 class="center-text">Phân Tích Dữ Liệu</h1>
+        <section class="sections">
+            <h2 class="de">Thông Tin Tổng Quan Về Ngành</h2>
+            <div class="containers">
+                <div class="texts">
+                    <h1>Ngành này là gì? Học gì?</h1>
+                    <p>Ngành Phân Tích Dữ Liệu là ngành học nghiên cứu về cách thu thập, xử lý, và phân tích các dữ liệu để rút ra những thông tin, xu hướng và mẫu hình hữu ích cho việc ra quyết định trong các lĩnh vực khác nhau như kinh doanh, công nghệ, y tế và nghiên cứu khoa học. Sinh viên ngành Phân Tích Dữ Liệu sẽ học về các phương pháp thống kê, lập trình, khai thác dữ liệu và học các công cụ phân tích dữ liệu như Python, R, SQL, và các phần mềm phân tích dữ liệu khác.</p>
+    
+                    <h1>Ngành này học về:</h1>
+                    <ul>
+                        <li>Thu thập và xử lý dữ liệu lớn.</li>
+                        <li>Phân tích dữ liệu bằng các phương pháp thống kê và học máy.</li>
+                        <li>Lập trình và phát triển phần mềm phân tích dữ liệu.</li>
+                        <li>Khai thác và trực quan hóa dữ liệu.</li>
+                        <li>Ứng dụng phân tích dữ liệu trong các ngành nghề khác nhau.</li>
+                    </ul>
+    
+                    <h1>Mức lương trung bình</h1>
+                    <ul>
+                        <li>Chuyên viên phân tích dữ liệu: Lương từ 15-25 triệu đồng/tháng.</li>
+                        <li>Kỹ sư phân tích dữ liệu: Lương từ 20-30 triệu đồng/tháng.</li>
+                        <li>Chuyên gia phân tích dữ liệu lớn: Lương từ 30-50 triệu đồng/tháng.</li>
+                        <li>Chuyên gia khoa học dữ liệu: Lương từ 40 triệu đồng/tháng trở lên.</li>
+                    </ul>
+                    <p>Ngành Phân Tích Dữ Liệu mở ra nhiều cơ hội nghề nghiệp trong các lĩnh vực như công nghệ thông tin, tài chính, y tế, và kinh doanh. Đây là ngành học phù hợp với những ai đam mê làm việc với dữ liệu và công nghệ thông tin.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="sections">
+            <h2 class="de">Điểm Chuẩn & Điều Kiện Xét Tuyển</h2>
+            <div class="containers">
+                <div class="texts">
+                    <div class="section">
+                        <h2>1. Xét tuyển tài năng</h2>
+                        <p>Gồm 3 hình thức:</p>
+                
+                        <h3>a) Xét tuyển thẳng học sinh giỏi</h3>
+                        <p><strong>Đối tượng:</strong> Thí sinh tốt nghiệp THPT năm 2025, đạt thành tích cao trong các kỳ thi do Bộ GD&ĐT tổ chức:</p>
+                        <ul>
+                            <li>Được triệu tập tham dự kỳ thi chọn đội tuyển quốc gia dự thi Olympic quốc tế và khu vực.</li>
+                            <li>Đoạt giải Nhất, Nhì, Ba trong kỳ thi học sinh giỏi quốc gia.</li>
+                            <li>Trong đội tuyển quốc gia tham dự cuộc thi Khoa học kỹ thuật quốc tế.</li>
+                            <li>Đoạt giải Nhất, Nhì, Ba trong cuộc thi Khoa học kỹ thuật cấp quốc gia.</li>
+                        </ul>
+                
+                        <h3>b) Xét tuyển dựa trên chứng chỉ quốc tế</h3>
+                        <p><strong>Điều kiện:</strong></p>
+                        <ul>
+                            <li>Điểm trung bình học tập mỗi năm lớp 10, 11, 12 đạt từ 8.0 trở lên.</li>
+                            <li>Có ít nhất 1 trong các chứng chỉ quốc tế như SAT, ACT, v.v.</li>
+                        </ul>
+                
+                        <h3>c) Xét hồ sơ năng lực kết hợp phỏng vấn</h3>
+                        <p><strong>Đối tượng:</strong> Thí sinh tốt nghiệp THPT năm 2025, điểm trung bình học tập mỗi năm lớp 10, 11, 12 đạt từ 8.0 trở lên và đáp ứng 1 trong các điều kiện:</p>
+                        <ul>
+                            <li>Được chọn tham dự kỳ thi học sinh giỏi quốc gia.</li>
+                            <li>Đoạt giải trong kỳ thi chọn học sinh giỏi cấp tỉnh/thành phố.</li>
+                            <li>Được chọn tham dự cuộc thi Khoa học kỹ thuật quốc gia.</li>
+                            <li>Được chọn tham dự cuộc thi Đường lên đỉnh Olympia từ vòng tháng.</li>
+                            <li>Học sinh hệ chuyên của các trường THPT chuyên.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>2. Xét tuyển theo điểm thi Đánh giá tư duy (TSA)</h2>
+                        <p><strong>Đối tượng:</strong> Thí sinh tham dự kỳ thi Đánh giá tư duy do ĐH tổ chức.</p>
+                        <p><strong>Điều kiện:</strong> Đã tốt nghiệp THPT, đạt ngưỡng điểm TSA.</p>
+                        <p><strong>Hình thức thi:</strong> Trắc nghiệm khách quan trên máy tính.</p>
+                        <p><strong>Nội dung:</strong> Đánh giá 3 năng lực tư duy - Toán học, Đọc hiểu, Khoa học/Giải quyết vấn đề.</p>
+                        <p><strong>Địa điểm:</strong> 13 tỉnh/thành phố.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>3. Xét tuyển theo điểm thi tốt nghiệp THPT 2025</h2>
+                        <p><strong>Đối tượng:</strong> Thí sinh tham dự kỳ thi tốt nghiệp THPT 2025.</p>
+                        <p><strong>Điều kiện:</strong> Đã tốt nghiệp THPT, đạt ngưỡng điểm sàn do trường ĐH quy định.</p>
+                        <p><strong>Tổ hợp xét tuyển:</strong></p>
+                        <ul>
+                            <li>A00 (Toán, Lý, Hóa)</li>
+                            <li>A01 (Toán, Lý, Anh)</li>
+                            <li>A02 (Toán, Lý, Sinh)</li>
+                            <li>B00 (Toán, Hóa, Sinh)</li>
+                            <li>D01 (Toán, Văn, Anh)</li>
+                            <li>D04 (Toán, Văn, Hóa)</li>
+                            <li>D07 (Toán, Hóa, Anh)</li>
+                            <li>D26 (Văn, Anh, Hóa)</li>
+                            <li>D28 (Văn, Anh, Sinh)</li>
+                            <li>D29 (Văn, Anh, Lý)</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>Lưu ý:</h2>
+                        <ul>
+                            <li>Thí sinh có thể đăng ký xét tuyển theo nhiều phương thức khác nhau.</li>
+                            <li>Chứng chỉ ngoại ngữ quốc tế phải có ngày thi trước 30/5.</li>
+                            <li>Thí sinh cần theo dõi thông báo chính thức của trường để cập nhật thông tin chi tiết và chính xác nhất.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections">
+            <h2 class="de">Danh Sách Các Trường Đại Học Hàng Đầu</h2>
+            <h3 class="region-title">Miền Bắc</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hustHN.jpg" alt="Đại học Bách Khoa Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa Hà Nội</strong>
+                        <p>Trường đào tạo Phân tích Dữ liệu hàng đầu với chương trình chuẩn quốc tế.</p>
+                        <a href="https://www.hust.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/congngheHN.jpg" alt="Đại học Công nghệ - ĐHQG Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Công nghệ - ĐHQG Hà Nội</strong>
+                        <p>Đào tạo chuyên sâu về Khoa học Dữ liệu, AI, và Phân tích Dữ liệu.</p>
+                        <a href="https://uet.vnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/ptit.jpg" alt="Học viện Công nghệ Bưu chính Viễn thông">
+                    <div class="info">
+                        <strong>Học viện Công nghệ Bưu chính Viễn thông</strong>
+                        <p>Chuyên về Phân tích Dữ liệu và Viễn thông, hợp tác với nhiều doanh nghiệp lớn.</p>
+                        <a href="https://ptit.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/mta.jpg" alt="Học viện Kỹ thuật Quân sự">
+                    <div class="info">
+                        <strong>Học viện Kỹ thuật Quân sự</strong>
+                        <p>Đào tạo kỹ sư Phân tích Dữ liệu theo hướng nghiên cứu và ứng dụng quân sự.</p>
+                        <a href="https://mta.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/haiu.jpg" alt="Đại học Công nghiệp Hà Nội">
+                    <div class="info">
+                        <strong>Đại học Công nghiệp Hà Nội</strong>
+                        <p>Chương trình Phân tích Dữ liệu thực tiễn và hợp tác doanh nghiệp.</p>
+                        <a href="https://www.haui.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="region-title">Miền Trung</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/dut.jpg" alt="Đại học Bách Khoa - ĐH Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa - ĐH Đà Nẵng</strong>
+                        <p>Trường đào tạo Phân tích Dữ liệu hàng đầu khu vực miền Trung.</p>
+                        <a href="https://dut.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/huein.jpg" alt="Đại học Khoa học - ĐH Huế">
+                    <div class="info">
+                        <strong>Đại học Khoa học - ĐH Huế</strong>
+                        <p>Đào tạo Phân tích Dữ liệu với định hướng nghiên cứu và ứng dụng thực tế.</p>
+                        <a href="https://husc.hueuni.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/udn.jpg" alt="Đại học Sư phạm Kỹ thuật Đà Nẵng">
+                    <div class="info">
+                        <strong>Đại học Sư phạm Kỹ thuật Đà Nẵng</strong>
+                        <p>Chương trình Phân tích Dữ liệu chú trọng thực hành và ứng dụng thực tế.</p>
+                        <a href="https://ute.udn.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/qnu.jpg" alt="Đại học Quy Nhơn">
+                    <div class="info">
+                        <strong>Đại học Quy Nhơn</strong>
+                        <p>Chuyên ngành Phân tích Dữ liệu với định hướng phát triển ứng dụng.</p>
+                        <a href="https://www.qnu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/dntu.jpg" alt="Đại học Duy Tân">
+                    <div class="info">
+                        <strong>Đại học Duy Tân</strong>
+                        <p>Chương trình Phân tích Dữ liệu chuẩn quốc tế, có hợp tác với Mỹ.</p>
+                        <a href="https://duytan.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="region-title">Miền Nam</h3>
+            <div class="grid-container">
+                <div class="university-card">
+                    <img src="./hinh/hustHCM.jpg" alt="Đại học Bách Khoa TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Bách Khoa TP.HCM</strong>
+                        <p>Chương trình Phân tích Dữ liệu chuẩn quốc tế, liên kết với nhiều tập đoàn công nghệ.</p>
+                        <a href="https://www.hcmut.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/vnuhcm.webp" alt="Đại học Khoa học Tự nhiên - ĐHQG TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Khoa học Tự nhiên - ĐHQG TP.HCM</strong>
+                        <p>Đào tạo chuyên sâu về Khoa học Dữ liệu và Phân tích Dữ liệu.</p>
+                        <a href="https://www.hcmus.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/uit.jpg" alt="Đại học Công nghệ Thông tin - ĐHQG TP.HCM">
+                    <div class="info">
+                        <strong>Đại học Công nghệ Thông tin - ĐHQG TP.HCM</strong>
+                        <p>Chương trình đào tạo Phân tích Dữ liệu với định hướng ứng dụng thực tế.</p>
+                        <a href="https://www.uit.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/sgu.jpg" alt="Đại học Sài Gòn">
+                    <div class="info">
+                        <strong>Đại học Sài Gòn</strong>
+                        <p>Đào tạo ngành Phân tích Dữ liệu với chương trình thực tiễn và ứng dụng.</p>
+                        <a href="https://sgu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <img src="./hinh/cantho.jpg" alt="Đại học Cần Thơ">
+                    <div class="info">
+                        <strong>Đại học Cần Thơ</strong>
+                        <p>Chương trình Phân tích Dữ liệu chú trọng vào nghiên cứu và ứng dụng khu vực Đồng bằng Sông Cửu Long.</p>
+                        <a href="https://www.ctu.edu.vn/" target="_blank">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </main> -->
+</body>
+
+</html>

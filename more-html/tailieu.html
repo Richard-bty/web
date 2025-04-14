@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="shortcut icon" href="./hinh.jpg"> -->
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="content">
+                <div class="header-top">
+                    <a href="../index.html"><img src="../img/logo.png" alt="hhhh" class="logo"></a>
+                    <nav class="nav">
+                        <ul class="header-right" id="navbar_list-PC">
+                            <li><a class="navbar" style="font-size: 2rem;" href="../index.html">Trang chủ</a></li>
+                            <li><a class="navbar" style="font-size: 2rem;" href="../more-html/nghe.html">Các ngành nghề</a></li>
+                            <li><a class="navbar" style="font-size: 2rem;" href="../more-html/play.html">Trò chơi</a></li>
+                            <li><a class="navbar" style="font-size: 2rem;" href="../question/question.html">Tư vấn</a></li>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- menu -->
+            <div class="menu_header">
+                <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+                <label for="checkbox">
+                    <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </label>
+                <!-- lop phu -->
+                <label for="checkbox" class="overlay"></label>
+                <!-- phan menu -->
+                <div class="menu_drawer">
+                    <div class="menu_drawer-top">
+                        <label for="checkbox">
+                            <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                            </svg>
+                        </label>
+                    </div>
+                    <ul id="navbar_list-mobile"></ul>
+                    <script>
+                        const navPC = document.querySelector("#navbar_list-PC");
+                        const navmobile = document.querySelector("#navbar_list-mobile");
+                        navmobile.innerHTML = navPC.innerHTML;
+                    </script>
+                </div>
+            </div>
+        </header>
+        <main class="section">
+            <div class="content">
+                <div class="section-top">
+                    <h1 class="h1-2">Tài liệu học tập</h1>
+                </div>
+                <div class="section-bottom">
+                    <div class="section-card">
+                        <div class="card-1">
+                            <img src="../more-html/hinh-play/montoan.jpg" alt="##" width="240" height="160" style="margin-bottom: 7px;">
+                            <a href="https://drive.google.com/drive/u/2/folders/1idEJh1GJqxhzKDjNgLvi7JV19fPABUbX" target="_blank" class="click">Tải Tài Liệu</a>
+                        </div>
+                        <div class="card-1">
+                            <img src="../more-html/hinh-play/monvan.jpg" alt="##" width="240" height="160" style="margin-bottom: 7px;">
+                            <a href="https://drive.google.com/drive/folders/1yCF5ClKJSYunmSW2Qty3LelLB_mSVX5H" target="_blank" class="click">Tải Tài Liệu</a>
+                        </div>
+                        <div class="card-1">
+                            <img src="../more-html/hinh-play/monanh.jpg" alt="##" width="240" height="160" style="margin-bottom: 7px;">
+                            <a href="https://drive.google.com/drive/folders/1eF-1Ei3t8cvrWbYNN7BkDt1Jx78fZq4p" target="_blank" class="click">Tải Tài Liệu</a>
+                        </div>
+                        <div class="card-1">
+                            <img src="../more-html/hinh-play/monly.jpg" alt="##" width="240" height="160" style="margin-bottom: 7px;">
+                            <a href="https://drive.google.com/drive/folders/1ZjPYD6GyQtknLWgJ4HUEhs0yYDZMJuF1" target="_blank" class="click">Tải Tài Liệu</a>
+                        </div>
+                        <div class="card-1">
+                            <img src="../more-html/hinh-play/monhoa.jpg" alt="##" width="240" height="160" style="margin-bottom: 7px;">
+                            <a href="https://drive.google.com/drive/folders/1R1mnaaW4SQE8RCC0s7aCNIUqziwu2Rt0" target="_blank" class="click">Tải Tài Liệu</a>
+                        </div>
+                        <div class="card-1">
+                            <img src="../more-html/hinh-play/monsinh.jpg" alt="##" width="240" height="160" style="margin-bottom: 7px;">
+                            <a href="https://drive.google.com/drive/folders/1wC85ZNdTwRJ2aTTCGFtEP-J97NNlDiX8" target="_blank" class="click">Tải Tài Liệu</a>
+                        </div>
+                        <div class="card-1">
+                            <img src="../more-html/hinh-play/monsu.jpg" alt="##" width="240" height="160" style="margin-bottom: 7px;">
+                            <a href="https://drive.google.com/drive/folders/1vXm3hyjRBguJ4jmnpGaHwCa-olL46vPy" target="_blank" class="click">Tải Tài Liệu</a>
+                        </div>
+                        <div class="card-1">
+                            <img src="../more-html/hinh-play/mondia.jpg" alt="##" width="240" height="160" style="margin-bottom: 7px;">
+                            <a href="https://drive.google.com/drive/folders/1dNRaB1nqoffM6AM58lTo3_5lTS-eueGZ" target="_blank" class="click">Tải Tài Liệu</a>
+                        </div>
+                        <div class="card-1">
+                            <img src="../more-html/hinh-play/gdkt-pl.jpg" alt="##" width="240" height="160" style="margin-bottom: 7px;">
+                            <a href="https://drive.google.com/drive/u/2/folders/10HXooEuL6zk-cgRjsB50K3SUYua5sdXT" target="_blank" class="click">Tải Tài Liệu</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+</body>
+</html>
+

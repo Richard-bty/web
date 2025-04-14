@@ -20,22 +20,29 @@ function changeStep(step){
     update();
     updateNavigationButtons()
 }
-function updateNavigationButtons(){
-    const allAnswer = quizForm.querySelector(`input[name="q${currentStep}"]:checked`);
-    if(currentStep<10)
-    {
-    if (allAnswer) {
-        next.disabled = false;
+function updateNavigationButtons() {
+    const allAnswers = quizForm.querySelectorAll(`input[name="q${currentStep}[]"]:checked`);
+
+    if (currentStep < 10) {
+        next.disabled = allAnswers.length === 0;
     } else {
-        next.disabled = true;
-    }}else {
-        if (allAnswer) {
-            xemKq.disabled = false;
-        } else {
-            xemKq.disabled = true;
-        }
+        xemKq.disabled = allAnswers.length === 0;
     }
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const checkboxes = document.querySelectorAll('.checkbox');
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            const label = document.querySelector(`label[for="${this.id}"]`);
+            if (this.checked) {
+                label.classList.add('selected');
+            } else {
+                label.classList.remove('selected');
+            }
+        });
+    });
+});
 quizForm.addEventListener('change', function(event) {
     updateNavigationButtons()
 });

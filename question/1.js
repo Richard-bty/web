@@ -1,28 +1,38 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const quizForm = document.getElementById('quizForm');
     const resultDiv = document.getElementById('result');
     const careerResult = document.getElementById('careerResult');
     const btnKQ = document.querySelector('.btn-xkq');
-
+    const checkboxes = document.querySelectorAll('.checkbox');
+    
+    checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                const label = document.querySelector(`label[for="${this.id}"]`);
+                if (this.checked) {
+                    label.classList.add('selected');
+                } else {
+                    label.classList.remove('selected');
+                }
+            });
+        });
+    
     const resetAnswers = () => {
-        // Reset tất cả các radio buttons về trạng thái chưa chọn
-        for (let i = 1; i <= 23; i++) {
-            const radio = quizForm.querySelector(`input[name="q${i}"]`);
-            if (radio) {
-                radio.checked = false;
-            }
-        }
+        // Bỏ chọn tất cả checkbox
+        const checkboxes = quizForm.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
     };
 
     window.addEventListener('DOMContentLoaded', function () {
-        // Kiểm tra nếu đây là lần đầu truy cập trong phiên hiện tại
+        // Chỉ chạy khi lần đầu vào trang trong session hiện tại
         if (!sessionStorage.getItem('hasVisited')) {
-            localStorage.removeItem('careerType'); // reset đáp án cũ
-            sessionStorage.setItem('hasVisited', 'true'); // đánh dấu đã vào rồi
+            localStorage.removeItem('careerType');
+            sessionStorage.setItem('hasVisited', 'true');
         }
-    });    
-    
-    btnKQ.addEventListener('click', function(e) {
+    });
+
+    btnKQ.addEventListener('click', function (e) {
         e.preventDefault();
 
         const answers = {
@@ -34,16 +44,16 @@ document.addEventListener('DOMContentLoaded', function() {
             Conventional: 0
         };
 
-        const formElements = quizForm.elements;
-        for (let i = 1; i <= 23; i++) {
-            const selectedAnswer = quizForm.querySelector(`input[name="q${i}"]:checked`);
-
-            if (selectedAnswer) {
-                answers[selectedAnswer.value]++;
+        // Lặp qua tất cả checkbox được chọn trong form
+        const selectedCheckboxes = quizForm.querySelectorAll('input[type="checkbox"]:checked');
+        selectedCheckboxes.forEach(checkbox => {
+            const value = checkbox.value;
+            if (answers.hasOwnProperty(value)) {
+                answers[value]++;
             }
+        });
 
-        }
-
+        // Tìm nhóm có số điểm cao nhất
         let highestValue = 0;
         let careerType = '';
 
@@ -54,11 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
+        // Lưu và chuyển trang
         localStorage.setItem('careerType', careerType);
-
-        window.location.href = '../more-html/nghe.html'; 
+        window.location.href = '../more-html/nghe.html';
     });
 
     resetAnswers();
-    
 });

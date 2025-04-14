@@ -13,6 +13,16 @@ body
 body {
     padding-top: 50px !important;
 }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(90deg, #5aa4f4, #0056b3); /* Gradient màu xanh */
+    z-index: 1000; /* Đảm bảo nằm trên các phần tử khác */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tùy chọn: tạo bóng cho đẹp */
+}
 .header-top{
     display: flex;
     justify-content: space-between;

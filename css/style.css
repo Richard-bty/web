@@ -58,17 +58,24 @@ html{
     font-size: 3rem;
     font-weight: 800;
 }
-.section-card{
+
+.section-card {
     display: grid;
     align-items: center;
     margin-top: 30px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 4 cột */
+    gap: 20px;
 }
-
+.section-cards {
+    display: grid;
+    align-items: center;
+    margin-top: 30px;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột */
+    gap: 20px;
+}
 .card-1 {
-    padding: 20px;
-    margin: 20px;
-
+    padding: 8px;
+    margin: 8px;
     border-radius: 10px;
     background: #fff;
     border: 1px solid #5b53ed;
@@ -156,6 +163,6 @@ a.click:hover {
 
 
 @media(min-width: 992px){   
-   .card-1{ width: 350px;
+   .card-1{ width: 280px;
     height: 250px;
 }}

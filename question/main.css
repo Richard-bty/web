@@ -148,8 +148,9 @@ input{
     display: none;
 }
 
-.lb-radio.selected{
+.lb-checkbox.selected {
     background: #218af4;
+    color: white;
 }
 /* tablet & mobile */
 @media (max-width: 991.98px){

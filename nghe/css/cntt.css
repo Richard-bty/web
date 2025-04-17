@@ -185,9 +185,7 @@ a:hover {
     transition: background-color 0.3s ease;
 }
 
-.back-button:hover {
-    
-}
+
 /* ========== Responsive ========== */
 @media (max-width: 992px) {
     .grid-container {

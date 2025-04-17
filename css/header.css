@@ -48,6 +48,7 @@ body {
     font-family: Arial, sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .navbar:hover {
     transform: scale(1.1); /* Phóng to chữ */
     font-weight: bold; /* In đậm chữ */
@@ -90,7 +91,7 @@ body {
     .menu_drawer {
         position: fixed;
         background: linear-gradient(90deg, #5aa4f4, #0056b3); /* Gradient màu xanh */
-        inset: 0 0 0 50%;
+        inset: 0 0 0 55%;
         transform: translateX(100%);
         z-index: 2;
         transition: transform 0.5s ease-in-out; /* Hiệu ứng mượt */
@@ -103,7 +104,7 @@ body {
     .colse_menu{
         margin-top: 30px;
         margin-left: 30px;
-        height: 50px;
+        height: 40px;
     }
     #navbar_list-mobile{
         margin-top: 30px;
@@ -111,7 +112,7 @@ body {
     }
     .navbar{
         display: block;
-        font-size: 20px !important;
+        font-size: 25px !important;
         padding-top: 20px;
     }
     

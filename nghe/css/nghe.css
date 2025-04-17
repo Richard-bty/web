@@ -45,7 +45,7 @@ select option:hover{
 }
 
 .career-card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.831);
     padding: 16px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

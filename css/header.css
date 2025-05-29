@@ -41,20 +41,52 @@ body {
     display: flex;
   
 }
+.menu__header-logo,
+.colse_menu {
+    cursor: pointer;
+}
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
 .navbar {
     padding: 10px 15px;
-    color: black;
+    position: relative;
     font-size: 20px;
     font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s;
+    color: black;
+}
+.navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 0%;
+    height: 3px;
+    background-color: #f8d4a7ed; /* màu xanh dương */
+    transition: width 0.3s ease;
 }
 
-.navbar:hover {
-    transform: scale(1.1); /* Phóng to chữ */
-    font-weight: bold; /* In đậm chữ */
-    text-decoration: underline; /* Gạch chân chữ */
-    background-color: rgb(138, 243, 219); /* Thêm màu nền khi hover */
-    transition: transform 0.1s ease, background-color 0.1s ease, color 0.1s ease;
+/* Khi hover thì gạch xuất hiện */
+.navbar:hover::after {
+    width: 80%;
+}
+.navbar:hover{
+    font-weight: bold;
+    color: #dbeccf;
+}
+
+/* Active (đang ở trang đó) thì gạch luôn hiển thị */
+.navbar.active::after {
+    width: 80%;
+}
+
+/* Màu khi active */
+.navbar.active {
+    color: #dbeccf;
+    font-weight: bold;
 }
 
 @media (min-width: 992px){
@@ -63,18 +95,20 @@ body {
     }
 }
 /* tablet & mobile */
-@media (max-width: 991.98px){
-    .header-right{   display: none;}
-    .header-top{
+@media (max-width: 991.98px) {
+    .header-right {
+        display: none;
+    }
+    .header-top {
         position: relative;
     }
-    .menu__header-logo{
+    .menu__header-logo {
         height: 40px;
         position: absolute;
         top: 20px;
         right: 20px;
     }
-    .overlay{
+    .overlay {
         position: fixed;
         background-color: rgba(0, 0, 0, 0.3);
         inset: 0;
@@ -83,40 +117,40 @@ body {
         visibility: hidden;
         transition: 0.5s;
     }
-    .checkbox:checked ~ .overlay{
+    .checkbox:checked ~ .overlay {
         visibility: visible;
         opacity: 1;
     }
-    /* menu */
+
     .menu_drawer {
         position: fixed;
-        background: linear-gradient(90deg, #acc7e4, #61cbe9); /* Gradient màu xanh */
+        background: linear-gradient(90deg, #acc7e4, #61cbe9);
         inset: 0 0 0 55%;
         transform: translateX(100%);
         z-index: 2;
-        transition: transform 0.5s ease-in-out; /* Hiệu ứng mượt */
-        box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+        transition: transform 0.5s ease-in-out;
+        box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
     }
-    
+
     .checkbox:checked ~ .menu_drawer {
         transform: translateX(0);
     }
-    .colse_menu{
+    .colse_menu {
         margin-top: 30px;
         margin-left: 30px;
         height: 40px;
     }
-    #navbar_list-mobile{
+    #navbar_list-mobile {
         margin-top: 30px;
         margin-left: 20px;
     }
-    .navbar{
+    .navbar {
         display: block;
         font-size: 25px !important;
         padding-top: 20px;
     }
-    
 }
+
 @media(max-width: 767.98px){
     .navbar{
         font-size: 20px;    

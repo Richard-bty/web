@@ -124,7 +124,7 @@ body {
 
     .menu_drawer {
         position: fixed;
-        background: linear-gradient(90deg, #acc7e4, #61cbe9); /* Gradient màu xanh */
+        background: linear-gradient(90deg, #5aa4f4, #0056b3); /* Gradient màu xanh */
         inset: 0 0 0 55%;
         transform: translateX(100%);
         z-index: 2;

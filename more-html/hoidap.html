@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <title>Q&A App</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      background: #f4f6f8; /* màu xám nhẹ hơn */
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 65vw;
+      margin: 64px auto 32px auto;
+      background: #fff;
+      padding: 36px 32px 32px 32px;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.10), 0 1.5px 4px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s;
+    }
+    .container:focus-within, .container:hover {
+      box-shadow: 0 12px 36px rgba(0,0,0,0.13), 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h2 { text-align: center; }
+    input, button, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      border: 1.5px solid #e3eaf1;
+      border-radius: 10px;
+      font-size: 17px;
+      background: #f8fafc;
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+    input:focus, select:focus {
+      border: 1.5px solid #007bff;
+      background: #fff;
+      outline: none;
+      box-shadow: 0 0 0 2px #e3f0ff;
+    }
+    button {
+      background: linear-gradient(90deg, #007bff 60%, #5bc0ff 100%);
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-top: 12px;
+      font-size: 17px;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+      transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #0056b3 60%, #3fa9f5 100%);
+      box-shadow: 0 4px 16px rgba(0,123,255,0.13);
+      transform: translateY(-2px) scale(1.03);
+    }
+    .send-btn {
+      width: auto;
+      padding: 10px 22px;
+      margin-left: 8px;
+      margin-top: 0;
+      background: linear-gradient(90deg, #007bff 60%, #5bc0ff 100%);
+    }
+    .send-btn:hover { background: linear-gradient(90deg, #0056b3 60%, #3fa9f5 100%); }
+    .header-account {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+    }
+    .header-account img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2.5px solid #007bff;
+      background: #fff;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+      transition: box-shadow 0.2s;
+    }
+    .header-account img:hover {
+      box-shadow: 0 4px 16px rgba(0,123,255,0.18);
+    }
+    .header-account .login-link {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: #f1f6fb;
+      transition: background 0.2s, color 0.2s;
+      border: 1.5px solid #e3eaf1;
+    }
+    .header-account .login-link:hover {
+      background: #e3f0ff;
+      color: #0056b3;
+    }
+    .question {
+      background: #f9fbfd;
+      padding: 18px 16px 14px 16px;
+      margin-top: 18px;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.04);
+      transition: box-shadow 0.2s;
+      border: 1.5px solid #e3eaf1;
+    }
+    .question:hover {
+      box-shadow: 0 4px 16px rgba(0,123,255,0.10);
+      border-color: #b6d4fe;
+    }
+    .meta {
+      font-size: 13px;
+      color: #6c757d;
+      margin-bottom: 6px;
+    }
+    .like-btn, .dislike-btn {
+      font-size: 14px;
+      margin: 6px 8px 0 0;
+      padding: 5px 12px;
+      border-radius: 7px;
+      cursor: pointer;
+      display: inline-block;
+      background: #e3f0ff;
+      color: #007bff;
+      border: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .like-btn:hover, .dislike-btn:hover {
+      background: #007bff;
+      color: #fff;
+    }
+    .answers { margin-top: 14px; margin-left: 16px; }
+    .answer {
+      background: #fff;
+      border-left: 4px solid #28a745;
+      padding: 10px 14px;
+      margin-top: 8px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(40,167,69,0.06);
+      position: relative;
+      transition: box-shadow 0.2s;
+    }
+    .answer:hover {
+      box-shadow: 0 2px 8px rgba(40,167,69,0.13);
+    }
+    .filter-bar {
+      margin-top: 24px;
+      text-align: right;
+    }
+    .collapse-btn {
+      float: right;
+      margin-top: 5px;
+      background: #f1f1f1 !important;
+      color: #007bff !important;
+      font-size: 13px;
+      padding: 3px 14px;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .collapse-btn:hover {
+      background: #e3f0ff !important;
+      color: #0056b3 !important;
+    }
+    .avatar-preview {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 10px;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+      background: #e3eaf1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #b6d4fe;
+      border-radius: 8px;
+    }
+    @media (max-width: 900px) {
+      .container { max-width: 98vw; padding: 12px 4vw; }
+      .header-account { right: 10px; top: 10px; }
+    }
+    .header-right li:last-child {
+      margin-right: 55px;
+    }
+  </style>
+</head>
+<!-- HEADER -->
+<header class="header">
+  <div class="content" style="position:relative;">
+    <div class="header-top">
+      <a href="../index.html"><img src="../img/logo.png" alt="Logo" class="logo"></a>
+      <nav class="nav">
+        <ul class="header-right" id="navbar_list-PC">
+          <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+          <li><a class="navbar active" href="../more-html/hoidap.html">Hỏi - Đáp</a></li>
+          <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+          <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+          <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+          <li><a class="navbar" href="../more-html/tailieu.html">Tài Liệu</a></li>
+        </ul>
+        <div class="header-account" id="headerAccount"></div>
+      </nav>
+    </div>
+  </div>
+  <!-- menu mobile giữ nguyên -->
+  <div class="menu_header">
+    <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+    <label for="checkbox">
+      <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+      </svg>
+    </label>
+    <label for="checkbox" class="overlay"></label>
+    <div class="menu_drawer">
+      <div class="menu_drawer-top">
+        <label for="checkbox">
+          <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+          </svg>
+        </label>
+      </div>
+      <ul id="navbar_list-mobile"></ul>
+      <script>
+        const navPC = document.querySelector("#navbar_list-PC");
+        const navmobile = document.querySelector("#navbar_list-mobile");
+        navmobile.innerHTML = navPC.innerHTML;
+      </script>
+    </div>
+  </div>
+</header>
+<body>
+<div id="appSection">
+  <div class="container">
+    <div id="userEmailSpan" style="margin-bottom: 15px;"></div>
+    <div style="display:flex;gap:10px;align-items:center;">
+      <input id="questionInput" placeholder="Nhập câu hỏi của bạn...">
+      <button class="send-btn" onclick="postQuestion()">Gửi câu hỏi</button>
+    </div>
+    <div class="filter-bar">
+      <select id="filterSelect" onchange="loadQuestions()">
+        <option value="all">Tất cả</option>
+        <option value="answered">Đã trả lời</option>
+        <option value="unanswered">Chưa trả lời</option>
+      </select>
+    </div>
+    <div id="questionList"></div>
+    <button onclick="logout()" style="margin-top: 20px;">Đăng xuất</button>
+  </div>
+</div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+  import {
+    getAuth, onAuthStateChanged, signOut
+  } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js";
+  import {
+    getFirestore, collection, addDoc, doc, updateDoc, getDoc, setDoc,
+    onSnapshot, arrayUnion, increment
+  } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDluVjbvbcYYOKrjIADr1HZuM9z_V1Qp10",
+    authDomain: "q-a-app-66661.firebaseapp.com",
+    projectId: "q-a-app-66661",
+    storageBucket: "q-a-app-66661.appspot.com",
+    messagingSenderId: "493092109199",
+    appId: "1:493092109199:web:f21443a5e69de4a5caa9fa"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+
+  const appSection = document.getElementById("appSection");
+  const userEmailSpan = document.getElementById("userEmailSpan");
+  const questionList = document.getElementById("questionList");
+  const headerAccount = document.getElementById("headerAccount");
+
+  window.logout = function () {
+    signOut(auth);
+  };
+
+  onAuthStateChanged(auth, async (user) => {
+    if (user) {
+      const userDoc = await getDoc(doc(db, "users", user.uid));
+      const userData = userDoc.exists() ? userDoc.data() : {};
+      appSection.style.display = "block";
+      userEmailSpan.innerHTML = `
+        <img src="${userData.avatar || user.photoURL}" style="width:34px;height:34px;border-radius:50%;vertical-align:middle;margin-right:10px;box-shadow:0 1px 4px #b6d4fe;">
+        <span style="font-weight:500;font-size:17px;">${userData.displayName || user.displayName || user.email}</span>
+      `;
+      // Hiển thị avatar trên header
+      headerAccount.innerHTML = `
+        <img src="${userData.avatar || user.photoURL}" title="${userData.displayName || user.displayName || user.email}" onclick="window.location.href='profile.html'">
+      `;
+      loadQuestions();
+    } else {
+      appSection.style.display = "none";
+      // Hiển thị nút đăng nhập/đăng ký trên header
+      headerAccount.innerHTML = `<a class="login-link" href="auth.html">Đăng nhập / Đăng ký</a>`;
+      window.location.href = "auth.html";
+    }
+  });
+
+  window.postQuestion = async function () {
+    const question = document.getElementById("questionInput").value.trim();
+    if (question === "") return;
+
+    await addDoc(collection(db, "questions"), {
+      question,
+      author: auth.currentUser.displayName || auth.currentUser.email,
+      uid: auth.currentUser.uid,
+      answers: [],
+      likes: 0,
+      dislikes: 0,
+      timestamp: Date.now()
+    });
+
+    document.getElementById("questionInput").value = "";
+  };
+
+  let allQuestions = [];
+  let currentVisibleCount = 2;
+
+  // Lắng nghe dữ liệu 1 lần duy nhất khi trang load
+  onSnapshot(collection(db, "questions"), snapshot => {
+    allQuestions = [];
+    snapshot.forEach(docSnap => {
+      allQuestions.push({ id: docSnap.id, data: docSnap.data() });
+    });
+    renderQuestions();
+  });
+
+  function loadQuestions() {
+    currentVisibleCount = 2; // Reset lại số lượng hiển thị khi đổi filter
+    renderQuestions();
+  }
+
+  function renderQuestions() {
+    const filter = document.getElementById("filterSelect")?.value || "all";
+    questionList.innerHTML = "";
+
+    // Lọc theo trạng thái
+    let filteredQuestions = allQuestions;
+    if (filter === "answered") {
+      filteredQuestions = allQuestions.filter(q => q.data.answers && q.data.answers.length > 0);
+    } else if (filter === "unanswered") {
+      filteredQuestions = allQuestions.filter(q => !q.data.answers || q.data.answers.length === 0);
+    }
+
+    // Nếu vừa đổi filter thì luôn reset currentVisibleCount về 2
+    // (đã làm ở loadQuestions, nhưng đảm bảo lại ở đây nếu cần)
+    if (currentVisibleCount > filteredQuestions.length) {
+      currentVisibleCount = 2;
+    }
+
+    const toShow = filteredQuestions.slice(0, currentVisibleCount);
+
+    toShow.forEach(({ id, data: q }) => {
+      // Giới hạn số câu trả lời hiển thị
+      const maxAnswersToShow = 2;
+      let showAllAnswers = window[`showAllAnswers_${id}`] || false;
+      const answersToShow = showAllAnswers ? q.answers : (q.answers || []).slice(0, maxAnswersToShow);
+
+      const answersHtml = answersToShow.map((a, index) => `
+        <div class="answer" style="margin-top:8px;">
+          <div>
+            <img src="${a.avatar || ''}" style="width:22px;height:22px;border-radius:50%;vertical-align:middle;margin-right:7px;box-shadow:0 1px 4px #b6d4fe;">
+            <span style="font-weight:500;">${a.author}</span>: ${a.text}
+            ${auth.currentUser.uid === a.uid ? `
+              <span style="font-size:12px;color:#888;margin-left:8px;">
+                ${new Date(a.timestamp).toLocaleString("vi-VN", {
+                  hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit', year: 'numeric'
+                })}
+              </span>
+              <span class="like-btn" onclick="toggleEditAnswer('${id}', ${index})">✏️</span>
+              <span class="dislike-btn" onclick="deleteAnswer('${id}', ${index})">🗑️</span>
+              <div id="edit-answer-${id}-${index}" style="display:none; margin-top:5px;">
+                <input type="text" id="edit-input-${id}-${index}" value="${a.text}">
+                <button onclick="confirmEditAnswer('${id}', ${index})">Lưu</button>
+              </div>
+            ` : ""}
+          </div>
+          <div style="margin-top:6px;">
+            <span class="like-btn" onclick="likeAnswer('${id}', ${index})">👍 (${a.likes || 0})</span>
+            <span class="dislike-btn" onclick="dislikeAnswer('${id}', ${index})">👎 (${a.dislikes || 0})</span>
+          </div>
+        </div>
+      `).join("");
+
+
+      // Nút xem thêm/rút gọn trả lời nếu có nhiều hơn 2 câu trả lời
+      let moreAnswersBtn = "";
+      if (q.answers && q.answers.length > maxAnswersToShow) {
+        if (!showAllAnswers) {
+          moreAnswersBtn = `<button class="like-btn" onclick="showAllAnswers('${id}')">Xem thêm trả lời (${q.answers.length - maxAnswersToShow})</button>`;
+        } else {
+          moreAnswersBtn = `<button class="like-btn collapse-btn" onclick="collapseAnswers('${id}')">Thu gọn ▲</button>`;
+        }
+      }
+
+      const qDiv = document.createElement("div");
+      qDiv.className = "question";
+      qDiv.innerHTML = `
+        <p style="font-size:18px;font-weight:500;margin-bottom:6px;">${q.question}</p>
+        <div class="meta">Gửi bởi: ${q.author} - ${new Date(q.timestamp).toLocaleString("vi-VN", {
+          hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit', year: 'numeric'
+        })}</div>
+        <div>
+          <span class="like-btn" onclick="likeQuestion('${id}')">👍 (${q.likes})</span>
+          <span class="dislike-btn" onclick="dislikeQuestion('${id}')">👎 (${q.dislikes})</span>
+        </div>
+        <div class="answers" id="answers-${id}">
+          ${answersHtml}
+          ${moreAnswersBtn}
+        </div>
+        <div style="margin-top:10px;">
+          <span class="like-btn" onclick="toggleReplyInput('${id}')">💬 Trả lời</span>
+          <div id="reply-box-${id}" style="display:none; margin-top:5px;">
+            <input type="text" id="ans-${id}" placeholder="Trả lời...">
+            <button class="send-btn" onclick="submitAnswer('${id}')">Gửi</button>
+          </div>
+        </div>
+        ${q.uid === auth.currentUser.uid ? `
+          <div style="margin-top:10px;">
+            <button onclick="deleteQuestion('${id}')">🗑️ Xóa câu hỏi</button>
+          </div>
+        ` : ""}
+      `;
+      questionList.appendChild(qDiv);
+    });
+
+    // Xóa nút "Xem thêm" cũ nếu có
+    let oldBtn = document.getElementById("loadMoreBtn");
+    if (oldBtn) oldBtn.remove();
+
+    // Tạo lại nút "Xem thêm" nếu còn câu hỏi chưa hiển thị
+    if (filteredQuestions.length > currentVisibleCount) {
+      let loadMoreBtn = document.createElement("button");
+      loadMoreBtn.id = "loadMoreBtn";
+      loadMoreBtn.textContent = "Xem thêm";
+      loadMoreBtn.style.marginTop = "10px";
+      loadMoreBtn.onclick = () => {
+        currentVisibleCount += 2;
+        renderQuestions();
+      };
+      questionList.after(loadMoreBtn);
+    }
+  }
+
+  window.showAllAnswers = function(id) {
+    window[`showAllAnswers_${id}`] = true;
+    renderQuestions();
+  }
+
+  window.collapseAnswers = function(id) {
+    window[`showAllAnswers_${id}`] = false;
+    renderQuestions();
+  }
+
+  window.likeQuestion = async (id) => {
+    const ref = doc(db, "questions", id);
+    const snap = await getDoc(ref);
+    const data = snap.data();
+    if (!data.likedBy?.includes(auth.currentUser.uid)) {
+      await updateDoc(ref, {
+        likes: increment(1),
+        likedBy: arrayUnion(auth.currentUser.uid)
+      });
+    }
+  };
+
+  window.dislikeQuestion = async (id) => {
+    const ref = doc(db, "questions", id);
+    const snap = await getDoc(ref);
+    const data = snap.data();
+    if (!data.dislikedBy?.includes(auth.currentUser.uid)) {
+      await updateDoc(ref, {
+        dislikes: increment(1),
+        dislikedBy: arrayUnion(auth.currentUser.uid)
+      });
+    }
+  };
+
+  window.submitAnswer = async (id) => {
+    const input = document.getElementById(`ans-${id}`);
+    const answerText = input.value.trim();
+    if (answerText === "") return;
+
+    const userDoc = await getDoc(doc(db, "users", auth.currentUser.uid));
+    const userData = userDoc.exists() ? userDoc.data() : {};
+
+    const ref = doc(db, "questions", id);
+    await updateDoc(ref, {
+      answers: arrayUnion({
+        text: answerText,
+        author: userData.displayName || auth.currentUser.email,
+        avatar: userData.avatar || auth.currentUser.photoURL,
+        uid: auth.currentUser.uid,
+        timestamp: Date.now(),
+        likes: 0,
+        dislikes: 0,
+        likedBy: [],
+        dislikedBy: []
+      })
+    });
+
+    input.value = "";
+  };
+
+  window.editQuestion = async (id, currentText) => {
+    const newText = prompt("Chỉnh sửa câu hỏi:", currentText);
+    if (newText && newText.trim()) {
+      await updateDoc(doc(db, "questions", id), { question: newText.trim() });
+    }
+  };
+  import { deleteDoc } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js";
+
+  window.deleteQuestion = async function(id) {
+    if (confirm("Bạn có chắc chắn muốn xóa câu hỏi này không?")) {
+      try {
+        await deleteDoc(doc(db, "questions", id));
+      } catch (error) {
+        alert("Lỗi khi xóa câu hỏi: " + error.message);
+      }
+    }
+  };
+
+  window.editAnswer = async (questionId, answerIndex) => {
+    const docRef = doc(db, "questions", questionId);
+    const snap = await getDoc(docRef);
+    const data = snap.data();
+    const answer = data.answers[answerIndex];
+    const newText = prompt("Chỉnh sửa câu trả lời:", answer.text);
+    if (newText && newText.trim()) {
+      data.answers[answerIndex].text = newText.trim();
+      await updateDoc(docRef, { answers: data.answers });
+    }
+  };
+
+  window.deleteAnswer = async (questionId, answerIndex) => {
+    const docRef = doc(db, "questions", questionId);
+    const snap = await getDoc(docRef);
+    const data = snap.data();
+    if (confirm("Bạn có chắc muốn xóa câu trả lời này?")) {
+      data.answers.splice(answerIndex, 1);
+      await updateDoc(docRef, { answers: data.answers });
+    }
+  };
+
+  window.toggleReplyInput = function (id) {
+    const box = document.getElementById(`reply-box-${id}`);
+    box.style.display = box.style.display === "none" ? "block" : "none";
+  };
+
+  window.toggleEditAnswer = function (questionId, index) {
+    const box = document.getElementById(`edit-answer-${questionId}-${index}`);
+    box.style.display = box.style.display === "none" ? "block" : "none";
+  };
+
+  window.confirmEditAnswer = async (questionId, index) => {
+    const docRef = doc(db, "questions", questionId);
+    const snap = await getDoc(docRef);
+    const data = snap.data();
+    const newText = document.getElementById(`edit-input-${questionId}-${index}`).value.trim();
+    if (!newText) return;
+
+    data.answers[index].text = newText;
+    await updateDoc(docRef, { answers: data.answers });
+
+    // Ẩn lại khung sau khi chỉnh sửa
+    document.getElementById(`edit-answer-${questionId}-${index}`).style.display = "none";
+  };
+
+  window.likeAnswer = async (questionId, answerIndex) => {
+    const docRef = doc(db, "questions", questionId);
+    const snap = await getDoc(docRef);
+    const data = snap.data();
+    const answer = data.answers[answerIndex];
+
+    if (!answer.likedBy) answer.likedBy = [];
+    if (!answer.dislikedBy) answer.dislikedBy = [];
+    if (!answer.likes) answer.likes = 0;
+    if (!answer.dislikes) answer.dislikes = 0;
+
+    if (!answer.likedBy.includes(auth.currentUser.uid)) {
+      answer.likes += 1;
+      answer.likedBy.push(auth.currentUser.uid);
+
+      // Nếu đã dislike trước đó thì bỏ dislike
+      const dislikeIdx = answer.dislikedBy.indexOf(auth.currentUser.uid);
+      if (dislikeIdx !== -1) {
+        answer.dislikes -= 1;
+        answer.dislikedBy.splice(dislikeIdx, 1);
+      }
+
+      data.answers[answerIndex] = answer;
+      await updateDoc(docRef, { answers: data.answers });
+      renderQuestions();
+    }
+  };
+
+  window.dislikeAnswer = async (questionId, answerIndex) => {
+    const docRef = doc(db, "questions", questionId);
+    const snap = await getDoc(docRef);
+    const data = snap.data();
+    const answer = data.answers[answerIndex];
+
+    if (!answer.likedBy) answer.likedBy = [];
+    if (!answer.dislikedBy) answer.dislikedBy = [];
+    if (!answer.likes) answer.likes = 0;
+    if (!answer.dislikes) answer.dislikes = 0;
+
+    if (!answer.dislikedBy.includes(auth.currentUser.uid)) {
+      answer.dislikes += 1;
+      answer.dislikedBy.push(auth.currentUser.uid);
+
+      // Nếu đã like trước đó thì bỏ like
+      const likeIdx = answer.likedBy.indexOf(auth.currentUser.uid);
+      if (likeIdx !== -1) {
+        answer.likes -= 1;
+        answer.likedBy.splice(likeIdx, 1);
+      }
+
+      data.answers[answerIndex] = answer;
+      await updateDoc(docRef, { answers: data.answers });
+      renderQuestions();
+    }
+  };
+</script>
+</body>
+</html>

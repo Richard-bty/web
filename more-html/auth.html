@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <title>Đăng nhập / Đăng ký</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 400px;
+      margin: 60px auto;
+      background: white;
+      padding: 32px 24px 24px 24px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .tab-buttons { display: flex; justify-content: space-between; margin-bottom: 15px; }
+    .tab-buttons button { width: 48%; background-color: #007bff; color: #fff; border: none; border-radius: 8px; padding: 10px; font-size: 16px; cursor: pointer; }
+    .tab-buttons button.active { background-color: #0056b3; }
+    .tab { display: none; }
+    .tab.active { display: block; }
+    .avatar-preview { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-top: 10px; }
+    input, button { width: 100%; padding: 10px; margin-top: 10px; border-radius: 8px; border: 1px solid #cccccc; font-size: 16px; }
+    button { background-color: #28a745; color: white; font-weight: bold; border: none; cursor: pointer; }
+    button:hover { background-color: #218838; }
+    .error { color: red; margin-top: 8px; }
+    h2 { text-align: center; }
+    /* Thêm vào <style> trong file auth.html để đồng bộ header với hoidap.html */
+   .header-right li {
+      display: inline-block;
+    }
+    .header-right li:last-child {
+      margin-right: 55px;
+    }
+    .header-account {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 10;
+    }
+    .header-account img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2.5px solid #007bff;
+      background: #fff;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+      transition: box-shadow 0.2s;
+    }
+    .header-account img:hover {
+      box-shadow: 0 4px 16px rgba(0,123,255,0.18);
+    }
+    .header-account .login-link {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: #f1f6fb;
+      transition: background 0.2s, color 0.2s;
+      border: 1.5px solid #e3eaf1;
+      display: flex;
+      align-items: center;
+      height: 42px;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+    .header-account .login-link:hover {
+      background: #e3f0ff;
+      color: #0056b3;
+    }
+    @media (max-width: 600px) {
+      .profile-container { max-width: 98vw; padding: 12px 4vw; }
+      .header-account { right: 10px; top: 10px; }
+    }
+  </style>
+</head>
+<!-- Phần HTML menu header trích từ hoidap.html -->
+<header class="header">
+  <div class="content" style="position:relative;">
+    <div class="header-top">
+      <a href="../index.html"><img src="../img/logo.png" alt="Logo" class="logo"></a>
+      <nav class="nav">
+        <ul class="header-right" id="navbar_list-PC">
+          <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+          <li><a class="navbar" href="../more-html/hoidap.html">Hỏi - Đáp</a></li>
+          <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+          <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+          <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+          <li><a class="navbar" href="../more-html/tailieu.html">Tài Liệu</a></li>
+        </ul>
+        <div class="header-account" id="headerAccount">
+  <img src="...avatar..." alt="Avatar" />
+</div>
+      </nav>
+    </div>
+  </div>
+  <!-- menu mobile -->
+  <div class="menu_header">
+    <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" style="display: none;">
+    <label for="checkbox">
+      <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+      </svg>
+    </label>
+    <label for="checkbox" class="overlay"></label>
+    <div class="menu_drawer">
+      <div class="menu_drawer-top">
+        <label for="checkbox">
+          <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+          </svg>
+        </label>
+      </div>
+      <ul id="navbar_list-mobile"></ul>
+      <script>
+        const navPC = document.querySelector("#navbar_list-PC");
+        const navmobile = document.querySelector("#navbar_list-mobile");
+        navmobile.innerHTML = navPC.innerHTML;
+      </script>
+    </div>
+  </div>
+</header>
+<body>
+  <div class="container">
+    <div class="tab-buttons">
+      <button id="loginTabBtn" class="active" onclick="switchTab('login')">Đăng nhập</button>
+      <button id="registerTabBtn" onclick="switchTab('register')">Đăng ký</button>
+    </div>
+    <div id="loginTab" class="tab active">
+      <h2>Đăng nhập</h2>
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPassword" placeholder="Mật khẩu">
+      <button onclick="login()">Đăng nhập</button>
+      <div id="loginError" class="error"></div>
+    </div>
+    <div id="registerTab" class="tab">
+      <h2>Đăng ký</h2>
+      <input type="text" id="displayName" placeholder="Tên người dùng">
+      <input type="email" id="registerEmail" placeholder="Email">
+      <input type="password" id="registerPassword" placeholder="Mật khẩu">
+      <input type="password" id="confirmPassword" placeholder="Xác nhận mật khẩu">
+      <input type="file" id="avatar" accept="image/*">
+      <img class="avatar-preview" id="avatarPreview" src="" alt="" hidden>
+      <button onclick="register()">Đăng ký</button>
+      <div id="registerError" class="error"></div>
+    </div>
+  </div>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+    import {
+      getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,
+      updateProfile, onAuthStateChanged
+    } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js";
+    import {
+      getStorage, ref, uploadBytes, getDownloadURL
+    } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-storage.js";
+    import {
+      getFirestore, doc, setDoc
+    } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDluVjbvbcYYOKrjIADr1HZuM9z_V1Qp10",
+      authDomain: "q-a-app-66661.firebaseapp.com",
+      projectId: "q-a-app-66661",
+      storageBucket: "q-a-app-66661.appspot.com",
+      messagingSenderId: "493092109199",
+      appId: "1:493092109199:web:f21443a5e69de4a5caa9fa"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const storage = getStorage(app);
+    const db = getFirestore(app);
+
+    const avatarInput = document.getElementById("avatar");
+    const avatarPreview = document.getElementById("avatarPreview");
+
+    avatarInput.addEventListener("change", () => {
+      const file = avatarInput.files[0];
+      if (file) {
+        avatarPreview.src = URL.createObjectURL(file);
+        avatarPreview.hidden = false;
+      }
+    });
+
+    window.switchTab = function(tab) {
+      document.getElementById("loginTab").classList.remove("active");
+      document.getElementById("registerTab").classList.remove("active");
+      document.getElementById("loginTabBtn").classList.remove("active");
+      document.getElementById("registerTabBtn").classList.remove("active");
+      document.getElementById(tab + "Tab").classList.add("active");
+      document.getElementById(tab + "TabBtn").classList.add("active");
+      document.getElementById("loginError").textContent = "";
+      document.getElementById("registerError").textContent = "";
+    };
+
+    window.login = function () {
+      const email = document.getElementById("loginEmail");
+      const password = document.getElementById("loginPassword");
+      const errorDiv = document.getElementById("loginError");
+      errorDiv.textContent = "";
+      signInWithEmailAndPassword(auth, email.value, password.value)
+        .then(() => {
+          window.location.href = "hoidap.html";
+        })
+        .catch(err => {
+          errorDiv.textContent = "Lỗi: " + err.message;
+          email.focus();
+        });
+    };
+
+    window.register = async function () {
+      const name = document.getElementById("displayName");
+      const email = document.getElementById("registerEmail");
+      const password = document.getElementById("registerPassword");
+      const confirmPassword = document.getElementById("confirmPassword");
+      const avatarFile = avatarInput.files[0];
+      const errorDiv = document.getElementById("registerError");
+      errorDiv.textContent = "";
+
+      if (!name.value.trim() || !email.value || !password.value || password.value !== confirmPassword.value || !avatarFile) {
+        errorDiv.textContent = "Vui lòng điền đầy đủ thông tin và kiểm tra mật khẩu.";
+        return;
+      }
+
+      try {
+        const userCred = await createUserWithEmailAndPassword(auth, email.value, password.value);
+        const storageRef = ref(storage, `avatars/${userCred.user.uid}`);
+        await uploadBytes(storageRef, avatarFile);
+        const avatarURL = await getDownloadURL(storageRef);
+        await updateProfile(userCred.user, {
+          displayName: name.value,
+          photoURL: avatarURL
+        });
+        await setDoc(doc(db, "users", userCred.user.uid), {
+          displayName: name.value,
+          avatar: avatarURL,
+          email: email.value
+        });
+        window.location.href = "hoidap.html";
+      } catch (err) {
+        errorDiv.textContent = "Lỗi đăng ký: " + err.message;
+      }
+    };
+
+    // Nếu đã đăng nhập thì chuyển thẳng sang hoidap.html
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        window.location.href = "hoidap.html";
+      }
+    });
+  </script>
+  <script>
+// Hiển thị chữ "Đăng nhập / Đăng ký" thay vì ô tròn khi chưa đăng nhập
+window.addEventListener('DOMContentLoaded', function() {
+  var headerAccount = document.getElementById('headerAccount');
+  var lastMenuItem = document.querySelector('.header-right li:last-child');
+  // Nếu headerAccount có class login-link (chưa đăng nhập) thì margin-right 150px, ngược lại 55px
+  if (headerAccount && lastMenuItem) {
+    // Nếu có chữ "Đăng nhập / Đăng ký" thì margin-right: 150px
+    if (headerAccount.querySelector('.login-link')) {
+      lastMenuItem.style.marginRight = '150px';
+    } else {
+      lastMenuItem.style.marginRight = '55px';
+    }
+  }
+});
+</script>
+</body>
+</html>

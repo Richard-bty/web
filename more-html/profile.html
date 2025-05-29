@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <title>Thông tin cá nhân</title>
+  <style>
+    body {
+      background: #f4f8fb;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .profile-container {
+      max-width: 400px;
+      margin: 100px auto 40px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.10), 0 1.5px 4px rgba(0,0,0,0.04);
+      padding: 36px 28px 28px 28px;
+      text-align: center;
+    }
+    .profile-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2.5px solid #007bff;
+      margin-bottom: 18px;
+      background: #f1f1f1;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+    }
+    .profile-info {
+      margin-bottom: 20px;
+    }
+    .profile-info label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      text-align: left;
+    }
+    .profile-info input[type="text"], .profile-info input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1.5px solid #e3eaf1;
+      margin-bottom: 14px;
+      font-size: 17px;
+      background: #f8fafc;
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+    .profile-info input[type="text"]:focus {
+      border: 1.5px solid #007bff;
+      background: #fff;
+      outline: none;
+      box-shadow: 0 0 0 2px #e3f0ff;
+    }
+    .profile-info input[type="file"] {
+      margin-bottom: 14px;
+    }
+    .profile-actions button {
+      background: linear-gradient(90deg, #007bff 60%, #5bc0ff 100%);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 0 8px;
+      transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+    }
+    .profile-actions button:hover {
+      background: linear-gradient(90deg, #0056b3 60%, #3fa9f5 100%);
+      box-shadow: 0 4px 16px rgba(0,123,255,0.13);
+      transform: translateY(-2px) scale(1.03);
+    }
+    .logout-btn {
+      background: #dc3545 !important;
+      margin-top: 20px;
+      transition: background 0.2s;
+    }
+    .logout-btn:hover {
+      background: #b52a37 !important;
+    }
+    .error, .success {
+      margin-top: 10px;
+      font-size: 15px;
+    }
+    .error { color: #dc3545; }
+    .success { color: #28a745; }
+    /* Header account style */
+    .header-right li {
+      display: inline-block;
+    }
+    .header-right li:last-child {
+      margin-right: 55px;
+    }
+    .header-account {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 10;
+    }
+    .header-account img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2.5px solid #007bff;
+      background: #fff;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+      transition: box-shadow 0.2s;
+    }
+    .header-account img:hover {
+      box-shadow: 0 4px 16px rgba(0,123,255,0.18);
+    }
+    .header-account .login-link {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: #f1f6fb;
+      transition: background 0.2s, color 0.2s;
+      border: 1.5px solid #e3eaf1;
+    }
+    .header-account .login-link:hover {
+      background: #e3f0ff;
+      color: #0056b3;
+    }
+    @media (max-width: 600px) {
+      .profile-container { max-width: 98vw; padding: 12px 4vw; }
+      .header-account { right: 10px; top: 10px; }
+    }
+  </style>
+</head>
+<!-- Phần HTML menu header trích từ hoidap.html -->
+<header class="header">
+  <div class="content" style="position:relative;">
+    <div class="header-top">
+      <a href="../index.html"><img src="../img/logo.png" alt="Logo" class="logo"></a>
+      <nav class="nav">
+        <ul class="header-right" id="navbar_list-PC">
+          <li><a class="navbar" href="../index.html">Trang chủ</a></li>
+          <li><a class="navbar" href="../more-html/hoidap.html">Hỏi - Đáp</a></li>
+          <li><a class="navbar" href="../question/question.html">Tư vấn</a></li>
+          <li><a class="navbar" href="../more-html/nghe.html">Các ngành nghề</a></li>
+          <li><a class="navbar" href="../more-html/play.html">Trò chơi</a></li>
+          <li><a class="navbar" href="../more-html/tailieu.html">Tài Liệu</a></li>
+        </ul>
+        <div class="header-account" id="headerAccount"></div>
+      </nav>
+    </div>
+  </div>
+  <!-- menu mobile -->
+  <div class="menu_header">
+    <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" style="display: none;">
+    <label for="checkbox">
+      <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+      </svg>
+    </label>
+    <label for="checkbox" class="overlay"></label>
+    <div class="menu_drawer">
+      <div class="menu_drawer-top">
+        <label for="checkbox">
+          <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+          </svg>
+        </label>
+      </div>
+      <ul id="navbar_list-mobile"></ul>
+      <script>
+        const navPC = document.querySelector("#navbar_list-PC");
+        const navmobile = document.querySelector("#navbar_list-mobile");
+        navmobile.innerHTML = navPC.innerHTML;
+      </script>
+    </div>
+  </div>
+</header>
+<body>
+  <div class="profile-container">
+    <h2>Thông tin cá nhân</h2>
+    <img id="avatarImg" class="profile-avatar" src="" alt="Avatar">
+    <form id="profileForm" class="profile-info">
+      <label for="displayName">Tên hiển thị</label>
+      <input type="text" id="displayName" name="displayName" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" disabled>
+      <label for="avatar">Đổi ảnh đại diện</label>
+      <input type="file" id="avatar" name="avatar" accept="image/*">
+    </form>
+    <div class="profile-actions">
+      <button type="button" onclick="updateProfileInfo()">Lưu thay đổi</button>
+      <button type="button" class="logout-btn" onclick="logout()">Đăng xuất</button>
+    </div>
+    <div id="profileMsg"></div>
+  </div>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+    import {
+      getAuth, onAuthStateChanged, updateProfile, signOut
+    } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js";
+    import {
+      getFirestore, doc, getDoc, setDoc
+    } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js";
+    import {
+      getStorage, ref, uploadBytes, getDownloadURL
+    } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-storage.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDluVjbvbcYYOKrjIADr1HZuM9z_V1Qp10",
+      authDomain: "q-a-app-66661.firebaseapp.com",
+      projectId: "q-a-app-66661",
+      storageBucket: "q-a-app-66661.appspot.com",
+      messagingSenderId: "493092109199",
+      appId: "1:493092109199:web:f21443a5e69de4a5caa9fa"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    const storage = getStorage(app);
+
+    const avatarImg = document.getElementById("avatarImg");
+    const displayNameInput = document.getElementById("displayName");
+    const emailInput = document.getElementById("email");
+    const avatarInput = document.getElementById("avatar");
+    const profileMsg = document.getElementById("profileMsg");
+    const headerAccount = document.getElementById("headerAccount");
+
+    let currentUser, userData;
+
+    onAuthStateChanged(auth, async (user) => {
+      if (!user) {
+        window.location.href = "auth.html";
+        return;
+      }
+      currentUser = user;
+      emailInput.value = user.email;
+      // Lấy thông tin từ Firestore
+      const userDoc = await getDoc(doc(db, "users", user.uid));
+      userData = userDoc.exists() ? userDoc.data() : {};
+      displayNameInput.value = userData.displayName || user.displayName || "";
+      avatarImg.src = userData.avatar || user.photoURL || "../img/default-avatar.png";
+      // Hiển thị avatar trên header
+      headerAccount.innerHTML = `
+        <img src="${userData.avatar || user.photoURL}" title="${userData.displayName || user.displayName || user.email}" onclick="window.location.href='profile.html'">
+      `;
+    });
+
+    window.updateProfileInfo = async function () {
+      profileMsg.textContent = "";
+      profileMsg.className = "";
+      const newName = displayNameInput.value.trim();
+      let newAvatarURL = userData.avatar || currentUser.photoURL || "";
+
+      // Nếu có chọn file ảnh mới
+      if (avatarInput.files[0]) {
+        try {
+          const storageRef = ref(storage, `avatars/${currentUser.uid}`);
+          await uploadBytes(storageRef, avatarInput.files[0]);
+          newAvatarURL = await getDownloadURL(storageRef);
+        } catch (err) {
+          profileMsg.textContent = "Lỗi tải ảnh đại diện: " + err.message;
+          profileMsg.className = "error";
+          return;
+        }
+      }
+
+      try {
+        // Cập nhật Firebase Auth
+        await updateProfile(currentUser, {
+          displayName: newName,
+          photoURL: newAvatarURL
+        });
+        // Cập nhật Firestore
+        await setDoc(doc(db, "users", currentUser.uid), {
+          displayName: newName,
+          avatar: newAvatarURL,
+          email: currentUser.email
+        });
+        profileMsg.textContent = "Cập nhật thành công!";
+        profileMsg.className = "success";
+        avatarImg.src = newAvatarURL;
+        // Cập nhật avatar trên header
+        headerAccount.innerHTML = `
+          <img src="${newAvatarURL}" title="${newName}" onclick="window.location.href='profile.html'">
+        `;
+      } catch (err) {
+        profileMsg.textContent = "Lỗi: " + err.message;
+        profileMsg.className = "error";
+      }
+    };
+
+    window.logout = function () {
+      signOut(auth);
+    };
+  </script>
+</body>
+</html>

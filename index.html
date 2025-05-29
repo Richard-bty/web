@@ -1,54 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="shortcut icon" href="./hinh.jpg"> -->
+    <link rel="shortcut icon" href="./hinh.jpg">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+  </style>
     <title>Career Guidance</title>
 </head>
+
 
 <body>
     <header class="header">
         <div class="content">
             <div class="header-top">
-                <a href="./index.html"><img src="./img/logo.png" alt="hhhh" class="logo"></a>
+                <a href="./index.html"><img src="./img/logo.png" alt="Logo Career Guidance" class="logo"></a>
                 <nav class="nav">
                     <ul class="header-right" id="navbar_list-PC">
-                        <li><a class="navbar" style="font-size: 2rem;" href="./index.html">Trang chủ</a></li>
+                        <li><a class="navbar active" style="font-size: 2rem;" href="./index.html">Trang chủ</a></li>
                         <li><a class="navbar" style="font-size: 2rem;" href="./question/question.html">Tư vấn</a></li>
                         <li><a class="navbar" style="font-size: 2rem;" href="./more-html/nghe.html">Các ngành nghề</a></li>
                         <li><a class="navbar" style="font-size: 2rem;" href="./more-html/play.html">Trò chơi</a></li>
                         <li><a class="navbar" style="font-size: 2rem;" href="./more-html/tailieu.html">Tài Liệu</a></li>
-                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
 
-        <!-- menu -->
+        <!-- menu mobile -->
         <div class="menu_header">
-            <input type="checkbox" name="checkbox" id="checkbox" class=" checkbox" style="display: none;">
+            <input type="checkbox" id="checkbox" class="checkbox" style="display: none;">
             <label for="checkbox">
                 <svg class="menu__header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor"
-                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                        d="M0 96C0 78.3 14.3 64 32 64h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z" />
                 </svg>
             </label>
-            <!-- lop phu -->
             <label for="checkbox" class="overlay"></label>
-            <!-- phan menu -->
             <div class="menu_drawer">
                 <div class="menu_drawer-top">
                     <label for="checkbox">
-                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <svg class="colse_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                             <path
-                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                         </svg>
                     </label>
                 </div>
@@ -69,61 +72,51 @@
                 <div class="hero-top">
                     <h1 class="h1-1">Chào Mừng Đến Với Hướng Nghiệp</h1>
                     <p class="p1-1">Chúng tôi cung cấp các dịch vụ tốt nhất để giúp bạn thành công trong sự nghiệp.</p>
-                    <a href="./question/question.html" class="btn btn-hero">Bắt Đầu Ngay</a>
+                    <button id="scroll-btn" class="btn btn-hero">Bắt Đầu Ngay</button>
                 </div>
             </div>
+            
         </div>
+        <div id="target-section" style="padding-top: 50px; margin-top: -80px;"></div>
         <!-- section -->
-        <section class="section">
+         
+        <section class="section" >
             <div class="content">
                 <div class="section-top">
-                    <h1 class="h1-2">Liên kết nhanh</h1>
+                    <h1 class="h1-2" style=" font-size: 2.5rem; color: rgb(159, 45, 64);">NỀN TẢNG ĐỊNH HƯỚNG NGHỀ NGHIỆP TOÀN DIỆN  CHO HỌC SINH THPT - PATHFINDER HOLLAND</h1>
                 </div>
                 <div class="section-bottom">
                     <div class="section-cards">
                         <div class="card-1">
-                            <img src="https://storage.googleapis.com/a1aa/image/Z76LgLhkJ94NC5pyTh2IeutPwt4L6Aipsy1KzeOZSQppT25TA.jpg"
-                                class="card_item" alt="">
-                            <a href="./question/question.html" class="card_h3">
-                                <h3>Câu hỏi hướng nghiệp</h3>
-                            </a>
-                            <p href="./question/question.html" class="p-card">Tìm câu trả lời cho các câu hỏi liên quan
-                                đến nghề nghiệp của bạn.</p>
+                            <img src="https://storage.googleapis.com/a1aa/image/Z76LgLhkJ94NC5pyTh2IeutPwt4L6Aipsy1KzeOZSQppT25TA.jpg" alt="Câu hỏi hướng nghiệp" class="card_item">
+                            <h3 class="card_h3"><a href="./question/question.html">Câu hỏi hướng nghiệp</a></h3>
+                            <p class="p-card">Tìm câu trả lời cho các câu hỏi liên quan đến nghề nghiệp của bạn.</p>
                             <a class="click" href="./question/question.html">Tìm hiểu thêm</a>
                         </div>
                         <div class="card-1">
-                            <img src="https://storage.googleapis.com/a1aa/image/S4iuShzafp18R67tkkeoz1v5ryQfF7FAXj8EHqw9K07VnsznA.jpg"
-                                class="card_item" alt="">
-                            <a href="./more-html/nghe.html">
-                                <h3 class="card_h3">Thư viện Ngành Nghề</h3>
-                            </a>
-                            <p href="./more-html/nghe.html" class="p-card">Truy cập vào một loạt các tài liệu về thông
-                                tin của các ngành nghề.
-                            </p>
+                            <img src="https://storage.googleapis.com/a1aa/image/S4iuShzafp18R67tkkeoz1v5ryQfF7FAXj8EHqw9K07VnsznA.jpg" alt="Thư viện Ngành Nghề" class="card_item">
+                            <h3 class="card_h3"><a href="./more-html/nghe.html">Thư viện Ngành Nghề</a></h3>
+                            <p class="p-card">Truy cập vào một loạt các tài liệu về thông tin của các ngành nghề.</p>
                             <a class="click" href="./more-html/nghe.html">Tìm hiểu thêm</a>
                         </div>
                         <div class="card-1">
-                            <img src="https://storage.googleapis.com/a1aa/image/f723D6vD1oRQIKSqV0dTB9GllhShm0bmDTHLLG8ardhzJ78JA.jpg"
-                                class="card_item" alt="">
-                            <a href="./more-html/play.html"></a>
-                            <h3 class="card_h3">Trò chơi giải trí</h3></a>
-                            <p href="./more-html/play.html" class="p-card">Các trò chơi giúp bạn giải tỏa tâm trạng sau
-                                những giờ học tập. </p>
+                            <img src="https://storage.googleapis.com/a1aa/image/f723D6vD1oRQIKSqV0dTB9GllhShm0bmDTHLLG8ardhzJ78JA.jpg" alt="Trò chơi giải trí" class="card_item">
+                            <h3 class="card_h3"><a href="./more-html/play.html">Trò chơi giải trí</a></h3>
+                            <p class="p-card">Các trò chơi giúp bạn giải tỏa tâm trạng sau những giờ học tập.</p>
                             <a class="click" href="./more-html/play.html">Tìm hiểu thêm</a>
                         </div>
                         <div class="card-1">
-                            <img src="https://storage.googleapis.com/a1aa/image/S4iuShzafp18R67tkkeoz1v5ryQfF7FAXj8EHqw9K07VnsznA.jpg"
-                            class="card_item" alt="">
-                            <a href="./more-html/tailieu.html"></a>
-                            <h3 class="card_h3"> Tài Liệu TN THPT</h3></a>
-                            <p href="./more-html/tailieu.html" class="p-card">Nơi bạn có thể tìm kiếm tài liệu học tập cho kỳ thi THPT .</p>
+                            <img src="https://storage.googleapis.com/a1aa/image/S4iuShzafp18R67tkkeoz1v5ryQfF7FAXj8EHqw9K07VnsznA.jpg" alt="Tài Liệu TN THPT" class="card_item">
+                            <h3 class="card_h3"><a href="./more-html/tailieu.html">Tài Liệu TN THPT</a></h3>
+                            <p class="p-card">Nơi bạn có thể tìm kiếm tài liệu học tập cho kỳ thi THPT.</p>
                             <a class="click" href="./more-html/tailieu.html">Tìm hiểu thêm</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- gioi thieu -->
+
+        <!-- giới thiệu -->
         <section class="introduce">
             <div class="content intro">
                 <div class="intro-top">
@@ -131,19 +124,30 @@
                 </div>
                 <div class="intro-bottom">
                     <div class="intro_b">
-                        <div class="intro_row"></div>
-                            <div class="intro_col"></div>
+                        <div class="intro_row">
+                            <div class="intro_col">
                                 <p class="intro_p"><strong>Địa chỉ trường:</strong> Số 17 - đường Thác Bà, Tánh Linh, Vietnam</p>
-                                <p class="intro_p"><strong>Học sinh sáng tác:</strong> Trần Bảo Anh , Lê Duy Thái</p>
+                                <p class="intro_p"><strong>Học sinh sáng tác:</strong> Trần Bảo Anh, Lê Duy Thái</p>
                             </div>
                             <div class="intro_col">
                                 <p class="intro_p"><strong>Giáo viên hướng dẫn:</strong> Cô Trương Thị Thảo</p>
                                 <p class="intro_p"><strong>Email:</strong> tranbaoanhk8@gmail.com</p>
                             </div>
-                        </div></div>
+                        </div>
                     </div>
                 </div>
+            </div>
         </section>
     </main>
+
+    <script>
+    document.getElementById('scroll-btn').addEventListener('click', function () {
+      document.getElementById('target-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  </script>
+      
 </body>
+
 </html>
